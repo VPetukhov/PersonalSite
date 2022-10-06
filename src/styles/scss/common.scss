@@ -1,0 +1,40 @@
+::selection {
+	background: mix($blue, #fff, 80%);
+	color: #fff;
+}
+
+::-moz-selection {
+	background: mix($blue, #fff, 80%);
+	color: #fff;
+}
+
+html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	// font-smoothing: antialiased;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	@include font(500);
+	font-size: 20px;
+	line-height: 1.3;
+	color: $dark;
+}
+
+@mixin layout() {
+	width: 90%;
+	max-width: 1600px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}

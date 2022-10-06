@@ -1,0 +1,12 @@
+@function color-replace($color) {
+
+		$string: #{'rgb(#{red($color)}, #{green($color)}, #{blue($color)})'};
+
+		$index: str-index($string, "#");
+		
+		@if $index {
+			@return str-slice($string, 1, $index - 1) + "" + str-replace(str-slice($string, $index + str-length("#")), "#", "");
+		}
+	
+		@return $string;
+}

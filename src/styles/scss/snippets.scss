@@ -1,0 +1,117 @@
+@mixin link($textColor: blue, $hoverColor: red) {
+	outline:none;
+	@include ease(.1s);
+	
+	&:link, &:visited {
+		color:$textColor;
+		text-decoration:none;
+	}
+
+	&:hover {
+		color:$hoverColor;
+	}
+
+	&:active {
+		color:$hoverColor;
+	}
+}
+
+@mixin btn-outline(
+	$color: blue,
+	$hover: red,
+	$fontSize: 1em,
+	$fontWeight: 500,
+	$strokeWidth: 2px,
+) {
+	display: inline-block;
+	font-size: $fontSize;
+	@include font($fontWeight);
+	border: $strokeWidth $color solid;
+	color: $color;
+	background-color: transparent;
+	padding: .5em 1em;
+	outline: none;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	@include rounded(10px);
+	@include ease(.1s);
+	&:hover {
+		color: #fff;
+		background-color: $hover;
+		border-color: $hover;
+	}
+};
+
+@mixin btn-fill(
+	$textColor: white,
+	$bgColor: blue,
+	$hoverTextColor: white,
+	$hoverBgColor: red,
+	$fontSize: 1em,
+) {
+	width: 100%;
+	display: block;
+	font-size: $fontSize;
+	border: 0;
+	color: $textColor;
+	background-color: $bgColor;
+	padding: .5em 1em;
+	outline: none;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	@include rounded(4px);
+	@include ease(.1s);
+	&:hover {
+		color: $hoverTextColor;
+		background-color: $hoverBgColor;
+	}
+};
+
+@mixin rounded($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-khtml-border-radius: $radius;
+	-webkit-background-clip: padding-box; 
+  -moz-background-clip: padding; 
+	background-clip: padding-box;
+}
+
+@mixin rotate($angle:0deg) {
+	-moz-transform: rotate($angle);
+	-ms-transform: rotate($angle);
+	-webkit-transform: rotate($angle);
+	-o-transform: rotate($angle);
+	transform: rotate($angle);
+}
+
+@mixin ease($time: 0.3s) {
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+
+
+@mixin ar-1x1() {
+	padding-top: 100%;
+}
+
+@mixin ar-4x3() {
+	padding-top: 75%;
+}
+
+@mixin ar-16x9() {
+	padding-top: 56.25%;
+}
+
+.br {
+	display: none;
+	@include media('lg') {
+		display: block;
+	}
+}

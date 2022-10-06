@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap");
+
+@mixin font($weight: 400) {
+	font-family: "Manrope", sans-serif;
+	font-weight: $weight;
+}

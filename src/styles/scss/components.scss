@@ -1,0 +1,20 @@
+@mixin link($textColor: #000, $hoverColor: #ff0000) {
+	outline:none;
+	text-decoration:none;
+	@include ease(.1s);
+	&:link {
+		color:$textColor;
+	}
+
+	&:visited {
+		color:$textColor;
+	}
+
+	&:hover {
+		color:$hoverColor;
+	}
+
+	&:active {
+		color:$hoverColor;
+	}
+}
