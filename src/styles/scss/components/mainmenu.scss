@@ -1,0 +1,25 @@
+.mainmenu {
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		background-color: #ccc;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__link {
+		padding-bottom: 8px;
+		@include link();
+		border-bottom: 1px transparent solid;
+	}
+
+	&__link--active {
+		border-bottom-color: #000;
+	}
+
+}

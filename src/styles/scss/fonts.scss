@@ -1,6 +1,59 @@
-@import url("https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap");
+@font-face {
+	font-family: 'actayregular';
+	src: url('../fonts/actay/actay-regular-webfont.woff2') format('woff2'),
+			 url('../fonts/actay/actay-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
-@mixin font($weight: 400) {
-	font-family: "Manrope", sans-serif;
-	font-weight: $weight;
+
+@font-face {
+	font-family: 'actayregular_italic';
+	src: url('../fonts/actay/actay-regularitalic-webfont.woff2') format('woff2'),
+			 url('../fonts/actay/actay-regularitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'actay_widebold';
+	src: url('../fonts/actay/actaywide-bold-webfont.woff2') format('woff2'),
+			 url('../fonts/actay/actaywide-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'actay_widebold_italic';
+	src: url('../fonts/actay/actaywide-bolditalic-webfont.woff2') format('woff2'),
+			 url('../fonts/actay/actaywide-bolditalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// regular
+// regular italic
+// wide
+// wide italic
+@mixin font($family: 'r') {
+
+	@if($family == 'r') {
+		font-family: 'actayregular', Arial, sans-serif;
+	}
+
+	@if($family == 'ri') {
+		font-family: 'actayregular_italic', Arial, sans-serif;
+	}
+
+	@if($family == 'w') {
+		font-family: 'actay_widebold', Arial, sans-serif;
+	}
+
+	@if($family == 'wi') {
+		font-family: 'actay_widebold_italic', Arial, sans-serif;
+	}
+
 }

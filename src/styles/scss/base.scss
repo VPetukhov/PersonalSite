@@ -5,8 +5,21 @@
 @import "snippets";
 @import "fonts";
 @import "common";
+@import "components";
 
 // Vendors
 
-// Modules
-@import "modules/spinner";
+// Components
+@import "components/bar";
+@import "components/form";
+@import "components/help";
+@import "components/hero";
+@import "components/jump";
+@import "components/mainmenu";
+@import "components/projects";
+@import "components/request";
+@import "components/short-bio";
+@import "components/social";
+@import "components/spinner";
+@import "components/steps";
+@import "components/spinner";
