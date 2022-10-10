@@ -1,21 +1,50 @@
 .hero {
-
+	padding: 100px 0;
+	background-color: $dark;
+	z-index: 1;
 	&__layout {
+		@include layout();
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__summary {
+		width: 70%;
+		z-index: 1;
+	}
+
+	&__category {
+		margin-bottom: 20px;
+		color: $blue;
+		font-size: 1.2em;
 	}
 
 	&__title {
+		margin: 0;
+		color: #fff;
+		@include font('w');
+		font-size: 4em;
+		line-height: 1;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		span {
+			color: $blue;
+		}
 	}
 
 	&__desc {
+		width: 50%;
+		margin-top: 20px;
+		color: #fff;
+		font-size: 1.2em;
 	}
 
 	&__tags {
+		margin-top: 40px;
 	}
 
 	&__cover {
+		margin-top: 60px;
 	}
 }
 .hero-tags {
@@ -24,11 +53,112 @@
 	}
 
 	&__list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&__item {
-
-		&--light {
-		}
+		margin: 0 20px 20px 0;
+		padding: 8px 24px;
+		list-style: none;
+		color: #fff;
+		background-color: $blue;
+		border: 1px transparent solid;
+		font-size: 1.2em;
+		white-space: nowrap;
+		@include rounded(100em);
 	}
+	
+	&__item--light {
+		color: $dark;
+		background-color: #fff;
+	}
+
+	&__item--dark {
+		color: #fff;
+		border-color: #fff;
+		background-color: transparent;
+	}
+
+}
+
+.hero-cover {
+
+	&__img {
+		position: relative;
+		z-index: 1;
+		width: 400px;
+		height: 400px;
+		@include rounded(20px);
+		object-fit: cover;
+	}
+
+	&__stain {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		z-index: 0;
+		background-color: green;
+		pointer-events: none;
+	}
+
+	&__stain--1 {
+		top: 100px;
+		right: 50px;
+		width: 600px;
+		height: 600px;
+		background: $blue;
+		filter: blur(120px);
+		@include rounded(300px);
+		opacity: .4;
+	}
+
+	&__stain--2 {
+		top: -200px;
+		left: -200px;
+		width: 900px;
+		height: 600px;
+		background: $pink;
+		filter: blur(120px);
+		transform: rotate(45deg);
+		@include rounded(300px);
+		opacity: .3;
+	}
+
+	&__shape {
+		position: absolute;
+		width: 400px;
+		height: 400px;
+		@include rounded(20px);
+		border: 1px $blue solid;
+		pointer-events: none;
+	}
+
+	&__shape--1 {
+		top: 20px;
+		left: 20px;
+	}
+
+	&__shape--2 {
+		top: 20px;
+		left: 20px;
+	}
+	
+	&__shape--3 {
+		top: 40px;
+		left: 40px;
+	}
+	
+	&__shape--4 {
+		top: 60px;
+		left: 60px;
+	}
+
+	&__shape--5 {
+		top: 80px;
+		left: 80px;
+	}
+
 }
