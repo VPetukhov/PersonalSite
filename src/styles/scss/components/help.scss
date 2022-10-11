@@ -1,36 +1,108 @@
 .help {
+	z-index: 900;
+	background-color: $dark;
+	padding: 100px 0;
+
+	&::after {
+		position: absolute;
+		width: 100%;
+		height: 400px;
+		bottom: 0;
+		z-index: 0;
+		pointer-events: none;
+		background: linear-gradient(0deg, #fff 0%, $dark 100%);
+		content: '';
+	}
 
 	&__layout {
+		@include layout();
+		z-index: 10;
+	}
+
+	&__stain {
+		position: absolute;
+		@include rounded(100%);
+		pointer-events: none;
+	}
+
+	&__stain--top {
+		top: -80px;
+		left: -200px;
+		width: 600px;
+		height: 320px;
+		background: radial-gradient(fade-out($blue, 0) 0%, fade-out($pink, .6) 50%);
+		filter: blur(80px);
+	}
+
+	&__stain--bottom {
+		bottom: 0;
+		left: 50%;
+		margin-left: -1500px;
+		width: 3000px;
+		height: 400px;
+		z-index: 1;
+		background: radial-gradient(fade-out($blue, 0) 0%, fade-out(#3f2264, 0) 40%, fade-out($pink, 0) 100%);
+		filter: blur(80px);
 	}
 
 	&__header {
+		margin-bottom: 100px;
 	}
 
-	&__title {
-	}
-
-	&__description {
+	&__title, &__desc {
+		color: #fff;
 	}
 
 	&__body {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__section {
+		width: 44%;
 	}
 
 	&__section-title {
+		display: inline-flex;
+		padding: 8px 24px;
+		color: #fff;
+		background-color: $blue;
+		border: 1px transparent solid;
+		@include font('w');
+		font-size: 1.2em;
+		white-space: nowrap;
+		@include rounded(100em);
 	}
 
 	&__accordion {
+		color: #fff;
 	}
 
 	&__accordion-item {
+		padding: 40px 0;
+		border-bottom: 1px #fff solid;
+	}
+
+	&__accordion-item::before {
+		position: absolute;
+		top: 30px;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		background-color: #ccc;
+		content: '×';
 	}
 
 	&__accordion-title {
+		@include font('w');
+		font-size: 1.2em;
 	}
 
 	&__accordion-desc {
+		width: 80%;
+		margin-top: 5px;
+		font-size: 1.2em;
+		opacity: .6;
 	}
 
 	&__list {

@@ -43,3 +43,28 @@ h1, h2, h3, h4, h5, h6 {
 .app {
 	overflow: hidden;
 }
+
+.section {
+
+	&__header {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		border-bottom: 2px $blue solid;
+	}
+
+	&__title {
+		margin: 0;
+		@include font('w');
+		font-size: 3em;
+		line-height: 1;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	&__desc {
+		width: 50%;
+		margin-top: 20px;
+		font-size: 1.2em;
+	}
+
+}
