@@ -1,6 +1,6 @@
 .projects {
 	z-index: 900;
-	padding: 100px 0;
+	padding: 100px 0 400px;
 
 	&__layout {
 		@include layout();
@@ -54,7 +54,8 @@
 		@include link($dark, $blue);
 		height: 100%;
 		padding: 50px;
-		background-color: fade-out($dark, .95);
+		// background-color: fade-out($dark, .95);
+		background-color: mix($dark, #fff, 6%);
 		@include rounded(20px);
 		@include ease(.3s);
 	}

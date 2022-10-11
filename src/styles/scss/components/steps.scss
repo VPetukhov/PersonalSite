@@ -1,9 +1,45 @@
 .steps {
+	padding-bottom: 100px;
+	background-color: $dark;
+
+	&::after {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		top: -200px;
+		z-index: 0;
+		pointer-events: none;
+		background: linear-gradient(180deg, #fff 0%, $dark 100%);
+		content: '';
+	}
+
+	&__stain {
+		position: absolute;
+		@include rounded(100%);
+		pointer-events: none;
+	}
+
+	&__stain--top {
+		top: -200px;
+		left: 50%;
+		margin-left: -1500px;
+		width: 3000px;
+		height: 400px;
+		z-index: 1;
+		background: radial-gradient(fade-out($blue, 0) 0%, fade-out(#3f2264, 0) 40%, fade-out($pink, 0) 100%);
+		filter: blur(80px);
+	}
 
 	&__layout {
+		@include layout();
+	}
+
+	&__title, &__desc {
+		color: #fff;
 	}
 
 	&__header {
+		z-index: 1;
 	}
 
 	&__title {
@@ -13,22 +49,60 @@
 	}
 
 	&__body {
+		z-index: 1;
 	}
 
 	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	&__item {
+		width: 20%;
 	}
 }
 .step {
 
+	opacity: .5;
+	@include ease(.2s);
+
+	&:hover {
+		opacity: 1;
+	}
+
 	&__number {
+		width: 200px;
+		height: 200px;
+		display: flex;
+		align-items: center;
+		color: #fff;
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 80px;
+			height: 80px;
+			border: 1px #fff solid;
+			@include font('w');
+			font-size: 2em;
+			@include rounded(100%);
+			@include ease(.2s);
+		}
+	}
+
+	&:hover &__number span {
+		width: 160px;
+		height: 160px;
 	}
 
 	&__title {
+		@include font('w');
+		margin-bottom: 20px;
+		color: #fff;
 	}
 
 	&__desc {
+		color: #fff;
 	}
 }
