@@ -1,10 +1,17 @@
 .form {
 
 	&__item {
+		margin-bottom: 20px;
 	}
 
 	&__input {
-
+		width: 100%;
+		padding: 10px 30px;
+		border: 1px fade-out(#fff, .6) solid;
+		background-color: transparent;
+		outline: none;
+		color: #fff;
+		@include rounded(100em);
 		&--text {
 		}
 
@@ -15,9 +22,12 @@
 		}
 
 		&--textarea {
+			@include rounded(20px);
+			resize: vertical;
 		}
 	}
 
 	&__btn {
+		@include primary-btn();
 	}
 }

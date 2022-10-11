@@ -30,6 +30,7 @@
 	@include rounded(20px);
 	@include ease(.4s);
 	box-shadow: 40px 20px 120px fade-out($blue, .2);
+	cursor: pointer;
 	span {
 		line-height: 1;
 		@include ease(.2s);

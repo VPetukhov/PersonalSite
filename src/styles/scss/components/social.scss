@@ -1,8 +1,18 @@
 .social {
-
+	margin: 0;
+	padding: 0;
 	&__item {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		margin-bottom: 10px;
 	}
 
 	&__link {
+		@include link(#fff, $blue);
+	}
+	span {
+		color: #fff;
+		margin-left: 20px;
 	}
 }
