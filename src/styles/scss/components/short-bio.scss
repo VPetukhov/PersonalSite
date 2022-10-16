@@ -1,7 +1,6 @@
 .short-bio {
 	z-index: 900;
 	color: #fff;
-	background-color: $dark;
 	padding: 100px 0 140px;
 	&__layout {
 		@include layout();

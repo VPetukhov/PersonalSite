@@ -1,6 +1,5 @@
 .hero {
 	padding: 100px 0;
-	background-color: $dark;
 	z-index: 1000;
 	&__layout {
 		@include layout();

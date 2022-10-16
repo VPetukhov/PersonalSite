@@ -1,8 +1,6 @@
 .bar {
-	z-index: 1000;
 	padding: 60px 0;
-	background-color: $dark;
-	z-index: 100;
+	z-index: 2000;
 	&__layout {
 		@include layout();
 	}

@@ -9,10 +9,21 @@
 	}
 
 	&__link {
+		position: relative;
 		@include link(#fff, $blue);
+		border-bottom: 1px fade-out(#fff, .5) solid;
+	}
+	&__link:hover {
+		border-bottom-color: $blue;
 	}
 	span {
+		position: absolute;
+		top: 3px;
+		right: -40px;
+		width: 20px;
+		height: 20px;
 		color: #fff;
-		margin-left: 20px;
+		transform: rotate(180deg);
+		@include icon-stroke('arrow', #fff , 1.5);
 	}
 }

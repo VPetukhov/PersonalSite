@@ -30,7 +30,7 @@ const config = {
 		img: src + "/media/img/**/*",
 		favicon: src + "/media/favicon/**/*",
 		fonts: src + "/media/fonts/**/*",
-		html: src + "/files/index.html",
+		html: src + "/files/pages/*.html",
 	},
 	dest: {
 		css: dest + "/css/",
