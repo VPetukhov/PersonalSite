@@ -1,2 +1,27 @@
 .jump {
+	display: none;
+	&__control {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		width: 100px;
+		height: 100px;
+		z-index: 9000;
+		background-color: fade-out(#fff, .6);
+		@include rounded(100%);
+		@include icon-stroke('arrow', #fff, 1px);
+		@include ease(.2s);
+		transform: rotate(90deg);
+		cursor: pointer;
+		&::before {
+			width: 60%;
+			height: 60%;
+		}
+		&:hover {
+			background-color: $blue;
+		}
+	}
+	@include media('md') {
+		display: flex;
+	}
 }
