@@ -5,7 +5,6 @@
 		padding: 0;
 		display: flex;
 		justify-content: space-between;
-		background-color: #ccc;
 	}
 
 	&__item {
@@ -14,12 +13,16 @@
 
 	&__link {
 		padding-bottom: 8px;
-		@include link();
+		@include link(#fff, $blue);
 		border-bottom: 1px transparent solid;
 	}
 
 	&__link--active {
-		border-bottom-color: #000;
+		border-bottom-color: #fff;
+	}
+
+	&__link--active:hover {
+		border-bottom-color: $blue;
 	}
 
 }
