@@ -15,10 +15,16 @@
 		padding-bottom: 8px;
 		@include link(#fff, $blue);
 		border-bottom: 1px transparent solid;
+		opacity: .5;
+	}
+
+	&__link:hover {
+		opacity: 1;
 	}
 
 	&__link--active {
 		border-bottom-color: #fff;
+		opacity: 1;
 	}
 
 	&__link--active:hover {

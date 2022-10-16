@@ -1,0 +1,43 @@
+.page-nav {
+
+	&__layout {
+		@include layout();
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		color: #fff;
+		font-size: 1.6em;
+		@include font('w');
+	}
+
+	&__menu {
+		border-top: 1px #fff solid;
+		padding-top: 40px;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__list-item {
+		list-style: none;
+	}
+
+	&__list-link {
+		display: inline-flex;
+		font-size: 1.2em;
+		border: 1px #fff solid;
+		@include link(#fff, #fff);
+		@include rounded(100em);
+		padding: 10px 30px;
+	}
+
+	&__list-link:hover {
+		background-color: $blue;
+		border-color: transparent;
+	}
+}
