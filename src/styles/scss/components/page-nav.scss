@@ -29,11 +29,13 @@
 
 	&__list-link {
 		display: inline-flex;
+		padding: 10px 30px;
 		font-size: 1.2em;
+		@include font('w');
 		border: 1px #fff solid;
 		@include link(#fff, #fff);
 		@include rounded(100em);
-		padding: 10px 30px;
+		white-space: nowrap;
 	}
 
 	&__list-link:hover {

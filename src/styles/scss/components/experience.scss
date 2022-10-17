@@ -1,0 +1,114 @@
+.experience {
+
+	&__layout {
+		@include layout();
+	}
+
+	&__section {
+		margin-top: 100px;
+	}
+
+	&__section--work &__item-position-title {
+		color: $blue;
+		padding-bottom: 10px;
+	}
+
+	&__section--education &__item-position-title {
+		color: #fff;
+	}
+
+	&__section-title {
+		display: inline-flex;
+		color: #fff;
+		@include font('w');
+		font-size: 1.6em;
+		background-color: $blue;
+		padding: 10px 30px;
+		@include rounded(100em);
+	}
+
+	&__head {
+		display: flex;
+		margin: 60px 0 30px 0;
+		padding: 0 60px;
+		color: fade-out(#fff, .7);
+	}
+
+	&__head-position {
+		width: 25%;
+	}
+
+	&__head-date {
+		width: 25%;
+	}
+
+	&__head-place {
+		width: 25%;
+	}
+
+	&__head-projects {
+		width: 25%;
+	}
+
+	&__body {
+	}
+
+	&__item {
+		display: flex;
+		padding: 60px;
+		@include ease(.1s);
+		@include rounded(20px);
+	}
+
+	&__item:hover {
+		background-color: fade-out(#fff, .95);
+	}
+
+	&__item-position {
+		width: 25%;
+		@include font('w');
+	}
+
+	&__item-date {
+		width: 25%;
+		color: #fff;
+	}
+
+	&__item-place {
+		width: 25%;
+		color: #fff;
+	}
+
+	&__item-place-name {
+		padding-right: 40px;
+	}
+
+	&__item-projects {
+		width: 25%;
+		color: #fff;
+		p {
+			margin: 0 0 20px 0;
+		}
+	}
+
+	&__item-position-title {
+		padding: 0 40px 0 20px;
+		border-left: 2px #fff solid;
+	}
+
+	&__item-position-desc {
+		padding: 0 40px 0 20px;
+		border-left: 2px #fff solid;
+		font-size: .9em;
+		color: #fff;
+	}
+
+	&__item-date-period {
+		margin-top: -20px;
+		padding: 8px 20px;
+		display: inline-flex;
+		border: 1px fade-out(#fff, .6) solid;
+		@include rounded(100em);
+	}
+
+}
