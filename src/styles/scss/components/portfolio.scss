@@ -1,0 +1,146 @@
+.portfolio {
+	background-color: #fff;
+
+	&::before {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		top: 0;
+		z-index: 0;
+		pointer-events: none;
+		background: linear-gradient(0deg, #fff 0%, $dark 100%);
+		content: '';
+	}
+
+	&__stain {
+		position: absolute;
+		@include rounded(100%);
+		pointer-events: none;
+	}
+
+	&__stain--top {
+		top: -200px;
+		left: 50%;
+		margin-left: -1500px;
+		width: 3000px;
+		height: 400px;
+		z-index: 1;
+		background: radial-gradient(fade-out($blue, 0) 0%, fade-out(#3f2264, 0) 40%, fade-out($pink, 0) 100%);
+		filter: blur(80px);
+	}
+
+	&__layout {
+		@include layout();
+	}
+
+	&__header, &__body {
+		z-index: 10;
+	}
+
+	&__title {
+		color: #fff;
+	}
+
+	&__section {
+		margin-top: 100px;
+	}
+
+	&__section--personal &__item {
+		align-items: center;
+	}
+
+	&__section-title {
+		margin-bottom: 40px;
+		display: inline-flex;
+		color: $blue;
+		@include font('w');
+		font-size: 1.6em;
+		background-color: #fff;
+		border: 1px $blue solid;
+		padding: 10px 30px;
+		@include rounded(100em);
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px;
+		@include ease(.1s);
+		border-bottom: 1px $dark solid;
+	}
+
+	&__item:hover {
+		background-color: fade-out($dark, .95);
+	}
+
+
+	&__item-title {
+		width: 30%;
+		padding-right: 40px;
+		@include font('w');
+		font-size: 1.2em;
+	}
+
+	&__item-summary {
+		width: 45%;
+		padding-right: 40px;
+	}
+
+	&__item-summary a {
+		@include link($blue, $dark);
+	}
+
+	&__item-summary-desc {
+	}
+
+	&__item-summary-tag {
+		display: inline-flex;
+		margin-top: 10px;
+		padding: 5px 10px;
+		font-size: .8em;
+		color: fade-out($dark, .4);
+		border: 1px fade-out($dark, .8) solid;
+		@include rounded(100em);
+	}
+
+	&__item-lang {
+		width: 10%;
+	}
+
+	&__item-lang-label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: 100px;
+		@include rounded(20px);
+		border: 1px $dark solid;
+		white-space: nowrap;
+	}
+
+	&__item-href {
+		width: 15%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__item-href-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: 100px;
+		@include icon-stroke('arrow', $dark, 2px);
+		@include ease(.1s);
+		transform: rotate(180deg);
+		&::before {
+			width: 80%;
+			height: 80%;
+		}
+	}
+
+	&__item-href-link:hover {
+		transform: rotate(180deg) translateX(-20px);
+	}
+	
+}
