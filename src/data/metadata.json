@@ -1,0 +1,16 @@
+{
+	"siteTitle": "Viktor Petukhov, PhD",
+	"language": "en",
+	"description": "",
+	"cover_url": "",
+	"url": "https://example.com/",
+	"mailto" : "aaaaa@mail.ru",
+	"instagram" : {
+		"title": "Instagram",
+		"url": "https://instagram.com/"
+	},
+	"facebook" : {
+		"title": "Facebook",
+		"url": "https://facebook.com/"
+	}
+}

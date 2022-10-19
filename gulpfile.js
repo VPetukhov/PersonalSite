@@ -3,9 +3,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const cleanCSS = require("gulp-clean-css");
 const groupMedia = require("gulp-group-css-media-queries");
-const sync = require("browser-sync").create();
 const rename = require("gulp-rename");
-const rigger = require("gulp-rigger");
 const autoprefixer = require("gulp-autoprefixer");
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
@@ -25,40 +23,19 @@ const dest = "build";
 
 const config = {
 	src: {
-		css: src + "/styles/scss/base.scss",
+		css: src + "/css/base.scss",
 		js: src + "/js/app.js",
-		img: src + "/media/img/**/*",
-		favicon: src + "/media/favicon/**/*",
-		fonts: src + "/media/fonts/**/*",
-		html: src + "/files/pages/*.html",
 	},
 	dest: {
 		css: dest + "/css/",
 		js: dest + "/js/",
-		img: dest + "/img/",
-		favicon: dest,
-		fonts: dest + "/fonts/",
-		html: dest,
 	},
 	watch: {
 		css: src + "/styles/**/*",
 		js: src + "/js/**/*",
-		img: src + "/media/img/**/*",
-		favicon: src + "/media/favicon/**/*",
-		fonts: src + "/media/fonts/**/*",
-		html: src + "/files/**/*",
 	},
 };
 
-const server = () => {
-	sync.init({
-		server: {
-			baseDir: dest,
-		},
-		open: false,
-		notify: false,
-	});
-};
 
 // css
 const css = () => {
@@ -138,44 +115,6 @@ const js = () => {
 		.pipe(sync.stream());
 };
 
-// html
-const html = () => {
-	return gulp
-		.src(config.src.html)
-		.pipe(plumber({ errorHandler: error }))
-		.pipe(rigger())
-		.pipe(gulpif(production, htmlmin({ collapseWhitespace: true })))
-		.pipe(replace('{{ version }}', version))
-		.pipe(gulp.dest(config.dest.html))
-		.pipe(sync.stream());
-};
-
-// fonts
-const fonts = () => {
-	return gulp
-		.src(config.src.fonts)
-		.pipe(plumber({ errorHandler: error }))
-		.pipe(gulp.dest(config.dest.fonts))
-		.pipe(sync.stream());
-};
-
-// img
-const img = () => {
-	return gulp
-		.src(config.src.img)
-		.pipe(plumber({ errorHandler: error }))
-		.pipe(gulp.dest(config.dest.img))
-		.pipe(sync.stream());
-};
-
-// favicon
-const favicon = () => {
-	return gulp
-		.src(config.src.favicon)
-		.pipe(plumber({ errorHandler: error }))
-		.pipe(gulp.dest(config.dest.favicon))
-		.pipe(sync.stream());
-};
 
 // bump
 const bump = () => {
@@ -196,14 +135,10 @@ const clean = () => {
 const watch = () => {
 	gulp.watch(config.watch.css, gulp.series(css));
 	gulp.watch(config.watch.js, gulp.series(js));
-	gulp.watch(config.watch.img, gulp.series(img));
-	gulp.watch(config.watch.favicon, gulp.series(favicon));
-	gulp.watch(config.watch.html, gulp.series(html));
-	gulp.watch(config.watch.fonts, gulp.series(fonts));
 };
 
 // build
-const build = gulp.series(clean, gulp.parallel(css, js, img, favicon, html, fonts));
+const build = gulp.series(clean, gulp.parallel(css, js));
 
 // errors
 const error = (err) => {
@@ -213,16 +148,11 @@ const error = (err) => {
 	})(err);
 };
 
-exports.server = server;
 exports.css = css;
 exports.js = js;
-exports.img = img;
-exports.favicon = favicon;
-exports.html = html;
-exports.fonts = fonts;
 exports.clean = clean;
 exports.bump = bump;
 exports.watch = watch;
 exports.build = build;
-exports.default = gulp.series(build, gulp.parallel(watch, server));
+exports.default = gulp.series(build, gulp.parallel(watch));
 exports.error = error;

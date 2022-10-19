@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ language or metadata.language }}">
+	<head>
+
+		{% include "meta.njk" %}
+
+		<link rel="stylesheet" href="/css/app.css" />
+
+		<title>{{ pageTitle }} → {{ metadata.siteTitle }}</title>
+
+	</head>
+	<body>
+
+		<div class="app">
+			{% include "bar.njk" %}
+			{{ content | safe }}
+			{% include "jump.njk" %}
+		</div>
+
+		<script src="./js/app.js"></script>
+
+	</body>
+</html>

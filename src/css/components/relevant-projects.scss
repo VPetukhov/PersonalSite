@@ -1,0 +1,137 @@
+.relevant-projects {
+	background-color: #fff;
+	padding: 0 0 100px 0;
+
+	&::before {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		top: 0;
+		z-index: 0;
+		pointer-events: none;
+		background: linear-gradient(0deg, #fff 0%, $dark 100%);
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		bottom: 0;
+		z-index: 0;
+		pointer-events: none;
+		background: linear-gradient(180deg, #fff 0%, $dark 100%);
+		content: '';
+	}
+
+	&__stain {
+		position: absolute;
+		@include rounded(100%);
+		pointer-events: none;
+	}
+
+	&__stain--top {
+		top: -200px;
+		left: 50%;
+		margin-left: -1500px;
+		width: 3000px;
+		height: 400px;
+		z-index: 1;
+		background: radial-gradient(fade-out($blue, 0) 0%, fade-out(#3f2264, 0) 40%, fade-out($pink, 0) 100%);
+		filter: blur(80px);
+	}
+
+	&__stain--bottom {
+		bottom: -200px;
+		left: 50%;
+		margin-left: -1500px;
+		width: 3000px;
+		height: 400px;
+		z-index: 1;
+		background: radial-gradient(fade-out($blue, 0) 0%, fade-out(#3f2264, 0) 40%, fade-out($pink, 0) 100%);
+		filter: blur(80px);
+	}
+
+	&__layout {
+		@include layout();
+	}
+
+	&__header, &__body {
+		z-index: 10;
+	}
+
+	&__header {
+		border-bottom-color: #fff;
+	}
+
+	&__body {
+		margin-top: 100px;
+	}
+
+	&__title {
+		color: #fff;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -20px;
+		padding: 0;
+	}
+
+	&__list-item {
+	}
+}
+.relevant-project {
+
+	width: 50%;
+	list-style: none;
+	&__layout {
+		height: 100%;
+		background-color: #fff;
+		padding: 60px;
+		margin: 0 20px;
+		box-shadow: 0 40px 100px fade-out($dark, .8);
+		@include rounded(24px);
+		@include ease(.2s);
+	}
+
+	&__layout:hover {
+		box-shadow: 0 40px 100px fade-out($blue, .5);
+	}
+
+	&__layout:hover &__title {
+		color: $blue;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		@include font('w');
+		font-size: 2.2em;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		@include ease(.2s);
+	}
+
+	&__cover {
+		margin: 40px 0;
+		@include ar-16x9();
+	}
+
+	&__cover-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	&__short-desc {
+		font-size: 1.2em;
+		p {
+			margin: 0 0 20px 0;
+		}
+	}
+}

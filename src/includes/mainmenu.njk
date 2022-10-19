@@ -1,0 +1,14 @@
+<div class="mainmenu">
+	<ul class="mainmenu__list">
+		{%- for item in collections.all | eleventyNavigation -%}
+			{%- if item.url -%}
+				{%- set isCurrent = (item.url == page.url) -%}
+				<li class="mainmenu__item">
+					<a class="mainmenu__link{% if isCurrent %} mainmenu__link--active{% endif %}" href="{{ item.url | url }}">
+						{{ item.title }}
+					</a>
+				</li>
+			{%- endif -%}
+		{%- endfor -%}
+	</ul>
+</div>

@@ -1,0 +1,32 @@
+.collab-types {
+	z-index: 10;
+	padding: 0 0 200px 0;
+	&__layout {
+		@include layout();
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+	}
+}
+.collab-type {
+	width: 25%;
+	list-style: none;
+
+	&__title {
+		margin-bottom: 20px;
+		@include font('w');
+		font-size: 1.8em;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #fff;
+	}
+
+	&__desc {
+		color: fade-out(#fff, .2);
+	}
+}
