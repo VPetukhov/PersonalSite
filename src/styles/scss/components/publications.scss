@@ -1,0 +1,132 @@
+.publications {
+
+	&__layout {
+		@include layout();
+	}
+
+	&::after {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		top: -200px;
+		z-index: 0;
+		pointer-events: none;
+		background: linear-gradient(180deg, #fff 0%, $dark 100%);
+		content: '';
+	}
+
+	&__stain {
+		position: absolute;
+		@include rounded(100%);
+		pointer-events: none;
+	}
+
+	&__stain--top {
+		top: -200px;
+		left: 50%;
+		margin-left: -1500px;
+		width: 3000px;
+		height: 400px;
+		z-index: 1;
+		background: radial-gradient(fade-out($blue, 0) 0%, fade-out(#3f2264, 0) 40%, fade-out($pink, 0) 100%);
+		filter: blur(80px);
+	}
+
+	&__header {
+		z-index: 1;
+	}
+
+	&__title, &__desc {
+		color: #fff;
+	}
+
+	&__desc a {
+		@include link(#fff, fade-out(#fff, .5));
+		border-bottom: 1px fade-out(#fff, .5) solid;
+	}
+
+	&__body {
+		margin-top: 100px;
+		z-index: 1;
+	}
+
+	&__section {
+		margin-left: 10%;
+		margin-bottom: 100px;
+		counter-reset: section;
+	}
+
+	&__section-title {
+		margin-bottom: 20px;
+		color: #fff;
+		@include font('w');
+		font-size: 2em;
+	}
+
+	&__item {
+		margin-bottom: 60px;
+	}
+
+	&__item::before {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+		top: 0;
+		left: -140px;
+		@include font('w');
+		font-size: 1.8em;
+		line-height: 1;
+		color: #fff;
+		border: 1px fade-out(#fff, .5) solid;
+		@include rounded(100%);
+		counter-increment: section;
+		content: counter(section);
+	}
+
+	&__item-title {
+		margin-bottom: 5px;
+		color: #fff;
+		@include font('w');
+	}
+
+	&__item-desc {
+		color: fade-out(#fff, .5);
+	}
+
+	&__item-footer {
+		margin-top: 20px;
+	}
+
+	&__item-link {
+		display: inline-flex;
+		font-size: .8em;
+		@include link(#fff, #fff);
+		background-color: $blue;
+		padding: 6px 16px;
+		margin-right: 5px;
+		@include rounded(100em);
+		@include ease(.1s);
+	}
+
+	&__item-link:hover {
+		background-color: fade-out($blue, .2);
+	}
+
+	&__item-tag {
+		display: inline-flex;
+		font-size: .8em;
+		@include link(#fff, #fff);
+		border: 1px #fff solid;
+		padding: 6px 16px;
+		@include rounded(100em);
+		@include ease(.1s);
+	}
+
+	&__item-tag:hover {
+		color: $dark;
+		background-color: #fff;
+	}
+}
