@@ -31,7 +31,7 @@ const config = {
 		js: dest + "/js/",
 	},
 	watch: {
-		css: src + "/styles/**/*",
+		css: src + "/css/**/*",
 		js: src + "/js/**/*",
 	},
 };
@@ -64,8 +64,7 @@ const css = () => {
 			})
 		))
 		.pipe(rename("app.css"))
-		.pipe(gulp.dest(config.dest.css))
-		.pipe(sync.stream());
+		.pipe(gulp.dest(config.dest.css));
 };
 
 const js = () => {
@@ -111,8 +110,7 @@ const js = () => {
 				drop_console : true
 			}
 		})))
-		.pipe(gulp.dest(config.dest.js))
-		.pipe(sync.stream());
+		.pipe(gulp.dest(config.dest.js));
 };
 
 
@@ -122,8 +120,7 @@ const bump = () => {
 	.pipe(bumper({
 		type: argv.type
 	}))
-	.pipe(gulp.dest('./'))
-	.pipe(sync.stream());
+	.pipe(gulp.dest('./'));
 };
 
 // clean

@@ -3,17 +3,15 @@
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
-		"major": "gulp bump --type=major && gulp build --production",
-		"minor": "gulp bump --type=minor && gulp build --production",
-		"patch": "gulp bump --type=patch && gulp build --production",
-		"publish": "gulp build --production",
-		"start": "npx @11ty/eleventy --serve & gulp"
+		"eleventy": "npx @11ty/eleventy --serve",
+		"gulp": "npx gulp",
+		"start": "concurrently \"npm run gulp\" \"npm run eleventy\""
 	},
 	"dependencies": {
 		"@babel/polyfill": "^7.12.1",
 		"animejs": "^3.2.1",
-		"jquery": "^3.6.0",
-		"core-js": "^3.24.0"
+		"core-js": "^3.24.0",
+		"jquery": "^3.6.0"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^1.0.2",
@@ -21,6 +19,7 @@
 		"@babel/preset-env": "^7.16.8",
 		"babel-core": "^6.26.3",
 		"babel-loader": "^8.2.3",
+		"concurrently": "^7.4.0",
 		"del": "^6.0.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
