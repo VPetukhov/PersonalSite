@@ -1,14 +1,15 @@
 .social {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
 	&__item {
-		display: flex;
-		justify-content: space-between;
 		list-style: none;
-		margin-bottom: 10px;
+		margin: 0 30px 10px 0;
 	}
 
 	&__link {
+		display: flex;
 		position: relative;
 		@include link(#fff, $blue);
 		border-bottom: 1px fade-out(#fff, .5) solid;
@@ -16,10 +17,14 @@
 	&__link:hover {
 		border-bottom-color: $blue;
 	}
+	&__link::after {
+		margin-left: 10px;
+		content: '→';
+	}
 	span {
-		position: absolute;
-		top: 3px;
-		right: -40px;
+		// position: absolute;
+		// top: 3px;
+		// right: -40px;
 		width: 20px;
 		height: 20px;
 		color: #fff;

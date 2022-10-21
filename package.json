@@ -4,7 +4,7 @@
 	"description": "",
 	"scripts": {
 		"eleventy": "npx @11ty/eleventy --serve",
-		"gulp": "npx gulp",
+		"gulp": "npx gulp watch",
 		"start": "concurrently \"npm run gulp\" \"npm run eleventy\""
 	},
 	"dependencies": {

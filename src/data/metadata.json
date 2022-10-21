@@ -4,13 +4,29 @@
 	"description": "",
 	"cover_url": "",
 	"url": "https://example.com/",
-	"mailto" : "aaaaa@mail.ru",
-	"instagram" : {
-		"title": "Instagram",
-		"url": "https://instagram.com/"
+	"mailto" : "viktor.petukhov@pm.me",
+	"twitter" : {
+		"title": "Twitter",
+		"url": "https://twitter.com/PetukhovViktor"
 	},
-	"facebook" : {
-		"title": "Facebook",
-		"url": "https://facebook.com/"
+	"linkedin" : {
+		"title": "LinkedIn",
+		"url": "https://www.linkedin.com/in/v-petukhov"
+	},
+	"github" : {
+		"title": "GitHub",
+		"url": "https://github.com/VPetukhov/"
+	},
+	"telegram" : {
+		"title": "Telegram",
+		"url": "https://t.me/vpetukhov/"
+	},
+	"slides" : {
+		"title": "Slides",
+		"url": "https://slides.com/vpetukhov"
+	},
+	"scholar" : {
+		"title": "Scholar",
+		"url": "https://scholar.google.com/citations?user=rkEysdsAAAAJ&hl=ru"
 	}
 }
