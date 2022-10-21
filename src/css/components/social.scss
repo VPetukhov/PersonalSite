@@ -12,7 +12,11 @@
 		display: flex;
 		position: relative;
 		@include link(#fff, $blue);
+		font-size: .8em;
 		border-bottom: 1px fade-out(#fff, .5) solid;
+		@include media('sm') {
+			font-size: 1em;
+		}
 	}
 	&__link:hover {
 		border-bottom-color: $blue;

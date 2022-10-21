@@ -1,0 +1,83 @@
+.popup-menu {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 100%;
+	z-index: 8000;
+	color: #fff;
+	background: linear-gradient(135deg, $blue 0%, $pink 100%);
+	@include ease(.2s);
+	overflow-y: auto;
+
+	&--active {
+		right: 0%;
+	}
+
+	&__layout {
+		padding: 40px;
+	}
+
+	&__header {
+
+	}
+
+	&__body {
+		margin-top: 40px;
+	}
+
+	&__footer {
+		margin-top: 40px;
+	}
+
+	&__cover {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 40px;
+	}
+
+	&__cover-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@include rounded(10px);
+	}
+
+	&__title {
+		@include font('w');
+		font-size: 1.4em;
+		line-height: 1;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	.mainmenu {
+
+		&__item {
+			margin-bottom: 20px;
+		}
+	
+		&__link {
+			padding-bottom: 2px;
+			@include link(#fff, #fff);
+			border-bottom: 1px transparent solid;
+			opacity: .5;
+		}
+	
+		&__link:hover {
+			opacity: 1;
+		}
+	
+		&__link--active {
+			border-bottom-color: #fff;
+			opacity: 1;
+		}
+	
+		&__link--active:hover {
+			border-bottom-color: $blue;
+		}
+	
+	}
+
+}

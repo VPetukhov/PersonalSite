@@ -1,0 +1,46 @@
+.menu-switcher {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9000;
+	padding: 15px;
+	line-height: 0;
+	background-color: fade-out($dark, .8);
+	@include media('bg') {
+		display: none;
+	}
+}
+
+.hamburger {
+	padding: 0;
+	outline: none;
+	z-index: 9999;
+	height: 24px;
+	&-box, &-inner, &-inner:after, &-inner:before {
+		width: 30px;
+		@include rounded(0);
+	}
+	&-inner, &-inner:after, &-inner:before {
+		height: 2px;
+		background-color: #fff;
+	}
+	&.is-active &-inner, &.is-active &-inner:after, &.is-active &-inner:before {
+		background-color: #ffffff;
+	}
+
+	// hover
+	&:hover, &.is-active:hover {
+		opacity: 1;
+	}
+
+	&:hover	&-inner, &:hover &-inner:after, &:hover	&-inner:before {
+		background-color: fade-out(#fff, .4);
+	}
+
+	// is-active hover
+
+	&.is-active:hover	&-inner, &.is-active:hover &-inner:after, &.is-active:hover	&-inner:before {
+		background-color: mix($blue, #fff, 50%);
+	}
+
+}

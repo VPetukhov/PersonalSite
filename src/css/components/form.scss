@@ -6,12 +6,17 @@
 
 	&__input {
 		width: 100%;
-		padding: 10px 30px;
+		padding: 8px 20px;
 		border: 1px fade-out(#fff, .6) solid;
 		background-color: transparent;
 		outline: none;
 		color: #fff;
+		font-size: .8em;
 		@include rounded(100em);
+		@include media('sm') {
+			font-size: 1em;
+			padding: 10px 30px;
+		}
 		&--text {
 		}
 

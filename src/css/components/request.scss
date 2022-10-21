@@ -76,8 +76,10 @@
 
 	&__contacts-title {
 		width: 100%;
+		font-size: .8em;
 		@include media('sm') {
 			width: 50%;
+			font-size: 1em;
 		}
 	}
 

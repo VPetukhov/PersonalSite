@@ -6,36 +6,54 @@
 
 	&__title {
 		margin-bottom: 10px;
-		color: #fff;
-		font-size: 1.6em;
 		@include font('w');
+		font-size: 1em;
+		color: #fff;
+		@include media('sm') {
+			font-size: 1.6em;
+		}
 	}
 
 	&__menu {
 		border-top: 1px #fff solid;
-		padding-top: 40px;
+		padding-top: 20px;
+		@include media('sm') {
+			padding-top: 40px;
+		}
 	}
 
 	&__list {
 		margin: 0;
 		padding: 0;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		@include media('sm') {
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__list-item {
 		list-style: none;
+		margin-bottom: 10px;
+		@include media('sm') {
+			margin-bottom: 0;
+		}
 	}
 
 	&__list-link {
 		display: inline-flex;
-		padding: 10px 30px;
-		font-size: 1.2em;
+		padding: 4px 20px;
+		font-size: .8em;
 		@include font('w');
 		border: 1px #fff solid;
 		@include link(#fff, #fff);
 		@include rounded(100em);
 		white-space: nowrap;
+		@include media('sm') {
+			font-size: 1.2em;
+			padding: 10px 30px;
+		}
 	}
 
 	&__list-link:hover {

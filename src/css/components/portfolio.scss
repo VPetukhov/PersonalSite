@@ -1,6 +1,10 @@
 .portfolio {
 	background-color: #fff;
-	padding: 0 0 200px 0;
+	padding: 0 0 60px 0;
+
+	@include media('sm') {
+		padding: 0 0 200px 0;
+	}
 
 	&::before {
 		position: absolute;
@@ -43,31 +47,46 @@
 	}
 
 	&__section {
-		margin-top: 100px;
+		margin-top: 40px;
+		@include media('sm') {
+			margin-top: 100px;
+		}
 	}
 
 	&__section--personal &__item {
 		align-items: center;
 	}
+	&__section--personal &__item-href {
+		width: 100%;
+	}
 
 	&__section-title {
-		margin-bottom: 40px;
 		display: inline-flex;
 		color: $blue;
 		@include font('w');
-		font-size: 1.6em;
+		font-size: .8em;
 		background-color: #fff;
 		border: 1px $blue solid;
-		padding: 10px 30px;
+		padding: 4px 20px;
 		@include rounded(100em);
+		@include media('sm') {
+			margin-bottom: 40px;
+			font-size: 1.6em;
+			padding: 10px 30px;
+		}
 	}
 
 	&__item {
 		display: flex;
 		justify-content: space-between;
-		padding: 40px;
+		flex-wrap: wrap;
+		padding: 20px 0;
 		@include ease(.1s);
 		border-bottom: 1px $dark solid;
+		@include media('sm') {
+			flex-wrap: nowrap;
+			padding: 40px;
+		}
 	}
 
 	&__item:hover {
@@ -76,22 +95,36 @@
 
 
 	&__item-title {
-		width: 30%;
-		padding-right: 40px;
+		width: 100%;
 		@include font('w');
-		font-size: 1.2em;
+		font-size: 1em;
+		@include media('sm') {
+			width: 30%;
+			padding-right: 40px;
+			font-size: 1.2em;
+		}
 	}
 
 	&__item-summary {
-		width: 45%;
-		padding-right: 40px;
+		width: 100%;
+		margin-bottom: 20px;
+		@include media('sm') {
+			width: 45%;
+			padding-right: 40px;
+			margin-bottom: 0;
+		}
 	}
 
 	&__item-summary a {
 		@include link($blue, $dark);
+		margin-bottom: 20px;
 	}
 
 	&__item-summary-desc {
+		font-size: .8em;
+		@include media('sm') {
+			font-size: 1em;
+		}
 	}
 
 	&__item-summary-tag {
@@ -105,35 +138,53 @@
 	}
 
 	&__item-lang {
-		width: 10%;
+		width: 50%;
+		@include media('sm') {
+			width: 10%;
+		}
 	}
 
 	&__item-lang-label {
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		width: 100px;
-		height: 100px;
+		padding: 8px 20px;
 		@include rounded(20px);
 		border: 1px $dark solid;
+		font-size: .8em;
 		white-space: nowrap;
+		@include media('sm') {
+			display: flex;
+			width: 100px;
+			height: 100px;
+			padding: 0;
+			font-size: 1em;
+		}
 	}
 
 	&__item-href {
-		width: 15%;
+		width: 50%;
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
+		@include media('sm') {
+			width: 15%;
+		}
 	}
 
 	&__item-href-link {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100px;
-		height: 100px;
+		width: 50px;
+		height: 30px;
 		@include icon-stroke('arrow', $dark, 2px);
 		@include ease(.1s);
 		transform: rotate(180deg);
+		@include media('sm') {
+			width: 100px;
+			height: 100px;
+		}
 		&::before {
 			width: 80%;
 			height: 80%;

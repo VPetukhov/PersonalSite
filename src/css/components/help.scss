@@ -48,7 +48,7 @@
 
 	&__header {
 		margin-bottom: 40px;
-		@include media('ms') {
+		@include media('sm') {
 			margin-bottom: 100px;
 		}
 	}

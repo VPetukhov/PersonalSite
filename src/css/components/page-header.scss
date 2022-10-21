@@ -1,6 +1,9 @@
 .page-header {
 
-	padding: 100px 0;
+	padding: 40px 0;
+	@include media('sm') {
+		padding: 100px 0;
+	}
 
 	&__layout {
 		@include layout();
@@ -37,7 +40,10 @@
 	&__title {
 		z-index: 1;
 		color: #fff;
-		font-size: 4em;
+		font-size: 1.4em;
+		@include media('sm') {
+			font-size: 4em;
+		}
 	}
 
 }

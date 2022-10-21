@@ -1,6 +1,9 @@
 .relevant-projects {
 	background-color: #fff;
-	padding: 0 0 100px 0;
+	padding: 0 0 20px 0;
+	@include media('sm') {
+		padding: 0 0 100px 0;
+	};
 
 	&::before {
 		position: absolute;
@@ -65,7 +68,10 @@
 	}
 
 	&__body {
-		margin-top: 100px;
+		margin-top: 40px;
+		@include media('sm') {
+			margin-top: 100px;
+		}
 	}
 
 	&__title {
@@ -75,8 +81,12 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		margin: 0 -20px;
 		padding: 0;
+		@include media('sm') {
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__list-item {
@@ -84,16 +94,24 @@
 }
 .relevant-project {
 
-	width: 50%;
+	width: 100%;
 	list-style: none;
+	margin-bottom: 20px;
+	@include media('sm') {
+		width: 50%;
+		margin-bottom: 0;
+	}
 	&__layout {
 		height: 100%;
 		background-color: #fff;
-		padding: 60px;
+		padding: 30px;
 		margin: 0 20px;
 		box-shadow: 0 40px 100px fade-out($dark, .8);
 		@include rounded(24px);
 		@include ease(.2s);
+		@include media('sm') {
+			padding: 60px;
+		};
 	}
 
 	&__layout:hover {
@@ -107,11 +125,14 @@
 	&__title {
 		margin-bottom: 20px;
 		@include font('w');
-		font-size: 2.2em;
+		font-size: 1.2em;
 		line-height: 1;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		@include ease(.2s);
+		@include media('sm') {
+			font-size: 2.2em;
+		}
 	}
 
 	&__cover {
@@ -129,7 +150,10 @@
 	}
 
 	&__short-desc {
-		font-size: 1.2em;
+		font-size: .8em;
+		@include media('sm') {
+			font-size: 1.2em;
+		}
 		p {
 			margin: 0 0 20px 0;
 		}

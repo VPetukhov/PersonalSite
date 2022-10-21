@@ -1,7 +1,45 @@
 .bar {
 	padding: 60px 0;
-	z-index: 2000;
+	z-index: 1000;
+	display: none;
+	@include media('sm') {
+		display: block;
+	}
 	&__layout {
 		@include layout();
+	}
+	.mainmenu {
+
+		&__list {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+	
+		&__item {
+			list-style: none;
+		}
+	
+		&__link {
+			padding-bottom: 8px;
+			@include link(#fff, $blue);
+			border-bottom: 1px transparent solid;
+			opacity: .5;
+		}
+	
+		&__link:hover {
+			opacity: 1;
+		}
+	
+		&__link--active {
+			border-bottom-color: #fff;
+			opacity: 1;
+		}
+	
+		&__link--active:hover {
+			border-bottom-color: $blue;
+		}
+	
 	}
 }

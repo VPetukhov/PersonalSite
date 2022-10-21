@@ -1,6 +1,5 @@
 .hero {
 	padding: 40px 0;
-	z-index: 1000;
 	@include media('sm') {
 		padding: 100px 0;
 	}

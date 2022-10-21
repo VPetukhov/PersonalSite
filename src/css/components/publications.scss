@@ -46,21 +46,30 @@
 	}
 
 	&__body {
-		margin-top: 100px;
+		margin-top: 40px;
 		z-index: 1;
+		@include media('sm') {
+			margin-top: 100px;
+		}
 	}
 
 	&__section {
-		margin-left: 10%;
-		margin-bottom: 100px;
+		margin-bottom: 40px;
 		counter-reset: section;
+		@include media('sm') {
+			margin-left: 10%;
+			margin-bottom: 100px;
+		}
 	}
 
 	&__section-title {
 		margin-bottom: 20px;
 		color: #fff;
 		@include font('w');
-		font-size: 2em;
+		font-size: 1.2em;
+		@include media('sm') {
+			font-size: 2em;
+		}
 	}
 
 	&__item {
@@ -69,7 +78,7 @@
 
 	&__item::before {
 		position: absolute;
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		width: 80px;
@@ -84,16 +93,27 @@
 		@include rounded(100%);
 		counter-increment: section;
 		content: counter(section);
+		@include media('sm') {
+			display: flex;
+		}
 	}
 
 	&__item-title {
 		margin-bottom: 5px;
 		color: #fff;
+		font-size: .8em;
 		@include font('w');
+		@include media('sm') {
+			font-size: 1em;
+		}
 	}
 
 	&__item-desc {
+		font-size: .8em;
 		color: fade-out(#fff, .5);
+		@include media('sm') {
+			font-size: 1em;
+		}
 	}
 
 	&__item-footer {

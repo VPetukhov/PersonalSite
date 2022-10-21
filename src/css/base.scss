@@ -9,6 +9,7 @@
 @import "app";
 
 // Vendors
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
 
 // Components
 @import "components/bar";
@@ -36,3 +37,5 @@
 @import "components/journey";
 @import "components/divider";
 @import "components/about-header";
+@import "components/menu-switcher";
+@import "components/popup-menu";

@@ -7,12 +7,20 @@
 
 		<link rel="stylesheet" href="/css/app.css" />
 
-		<title>{{ pageTitle }} → {{ metadata.siteTitle }}</title>
+		<title>
+			{% if '/' in page.url %}
+				{{ metadata.siteTitle }}
+			{% else %}
+				{{ pageTitle }} → {{ metadata.siteTitle }}
+			{% endif %}
+		</title>
 
 	</head>
 	<body>
 
 		<div class="app">
+			{% include "hamburger.njk" %}
+			{% include "popup-menu.njk" %}
 			{% include "bar.njk" %}
 			{{ content | safe }}
 			{% include "jump.njk" %}

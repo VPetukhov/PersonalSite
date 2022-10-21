@@ -1,12 +1,18 @@
 .experience {
 	z-index: 10;
-	padding: 0 0 200px 0;
+	padding: 0 0 40px 0;
+	@include media('sm') {
+		padding: 0 0 200px 0;
+	}
 	&__layout {
 		@include layout();
 	}
 
 	&__section {
-		margin-top: 100px;
+		margin-top: 40px;
+		@include media('sm') {
+			margin-top: 100px;
+		}
 	}
 
 	&__section--work &__item-position-title {
@@ -22,17 +28,24 @@
 		display: inline-flex;
 		color: #fff;
 		@include font('w');
-		font-size: 1.6em;
+		font-size: .8em;
 		background-color: $blue;
 		padding: 10px 30px;
 		@include rounded(100em);
+		@include media('sm') {
+			font-size: 1.6em;
+			padding: 10px 30px;
+		}
 	}
 
 	&__head {
-		display: flex;
+		display: none;
 		margin: 60px 0 30px 0;
 		padding: 0 60px;
 		color: fade-out(#fff, .7);
+		@include media('sm') {
+			display: flex;
+		}
 	}
 
 	&__head-position {
@@ -56,9 +69,14 @@
 
 	&__item {
 		display: flex;
-		padding: 60px;
+		flex-wrap: wrap;
+		padding: 20px;
 		@include ease(.1s);
 		@include rounded(20px);
+		@include media('sm') {
+			padding: 60px;
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__item:hover {
@@ -66,29 +84,56 @@
 	}
 
 	&__item-position {
-		width: 25%;
+		width: 100%;
 		@include font('w');
+		margin-bottom: 20px;
+		@include media('sm') {
+			width: 25%;
+			margin-bottom: 0;
+		}
 	}
 
 	&__item-date {
-		width: 25%;
+		width: 100%;
 		color: #fff;
+		margin-bottom: 20px;
+		@include media('sm') {
+			width: 25%;
+			margin-bottom: 0;
+		}
 	}
 
 	&__item-place {
-		width: 25%;
+		width: 100%;
 		color: #fff;
+		margin-bottom: 20px;
+		@include media('sm') {
+			width: 25%;
+			margin-bottom: 0;
+		}
 	}
 
 	&__item-place-name {
 		padding-right: 40px;
+		font-size: .8em;
+		@include media('sm') {
+			font-size: 1em;
+		}
 	}
 
 	&__item-projects {
-		width: 25%;
+		width: 100%;
 		color: #fff;
+		font-size: .8em;
+		@include media('sm') {
+			width: 25%;
+			font-size: 1em;
+		}
 		p {
-			margin: 0 0 20px 0;
+			margin: 0 0 10px 0;
+			@include media('sm') {
+				margin: 0 0 20px 0;
+			}
 		}
 	}
 
@@ -100,16 +145,21 @@
 	&__item-position-desc {
 		padding: 0 40px 0 20px;
 		border-left: 2px #fff solid;
-		font-size: .9em;
+		font-size: .8em;
 		color: #fff;
 	}
 
 	&__item-date-period {
-		margin-top: -20px;
 		padding: 8px 20px;
 		display: inline-flex;
+		font-size: .7em;
 		border: 1px fade-out(#fff, .6) solid;
 		@include rounded(100em);
+		@include media('sm') {
+			font-size: 1em;
+			margin-top: -20px;
+			padding: 8px 20px;
+		}
 	}
 
 }
