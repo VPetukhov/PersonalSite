@@ -1,0 +1,28 @@
+.divider {
+	width: 100%;
+	height: 300px;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		width: 5000px;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		margin-left: -2500px;
+		background: radial-gradient(farthest-corner at 20% 10%, fade-out($blue, 0) 0%, fade-out($pink, 0) 80%, fade-out($pink, 0) 100%);
+		filter: blur(90px);
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		width: 100%;
+		height: 300px;
+		top: 100%;
+		z-index: 0;
+		pointer-events: none;
+		background: linear-gradient(0deg, fade-out(#fff, 1) 0%, $dark 100%);
+		content: '';
+	}
+}

@@ -4,6 +4,7 @@
 
 	&__layout {
 		@include layout();
+		z-index: 1;
 	}
 
 	&__header {
