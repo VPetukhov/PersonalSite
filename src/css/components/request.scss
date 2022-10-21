@@ -1,6 +1,9 @@
 .request {
 	z-index: 10;
-	padding: 100px 0;
+	padding: 40px 0;
+	@include media('sm') {
+		padding: 100px 0;
+	}
 	
 	&__layout {
 		@include layout();
@@ -36,7 +39,10 @@
 	}
 
 	&__header {
-		margin-bottom: 100px;
+		margin-bottom: 20px;
+		@include media('sm') {
+			margin-bottom: 100px;
+		}
 	}
 
 	&__desc {
@@ -45,22 +51,34 @@
 	&__body {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		@include media('sm') {
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__summary {
-		width: 50%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
+		@include media('sm') {
+			width: 50%;
+		}
 	}
 
 	&__contacts {
 		color: #fff;
-		border-left: 1px #fff solid;
-		padding-left: 40px;
+		@include media('sm') {
+			border-left: 1px #fff solid;
+			padding-left: 40px;
+		}
 	}
 
 	&__contacts-title {
-		width: 50%;
+		width: 100%;
+		@include media('sm') {
+			width: 50%;
+		}
 	}
 
 	&__contacts-mail {
@@ -70,11 +88,15 @@
 
 	&__contacts-mail-link {
 		display: inline-flex;
-		padding: 5px 40px;
+		padding: 5px 20px;
 		@include link(#fff, #fff);
 		border: 1px #fff solid;
-		font-size: 1.8em;
+		font-size: 1em;
 		@include rounded(100em);
+		@include media('sm') {
+			padding: 5px 40px;
+			font-size: 1.8em;
+		}
 		&:hover {
 			background-color: $blue;
 			border-color: $blue;
@@ -82,20 +104,29 @@
 	}
 
 	&__contacts-mail-copy {
+		display: none;
 		margin-left: 10px;
-		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 60px;
 		border: 1px #fff solid;
 		@include rounded(100em);
+		@include media('sm') {
+			display: flex;
+		}
 	}
 
 	&__social {
-		margin-top: auto;
+		margin: 20px 0;
+		@include media('sm') {
+			margin: auto 0 20px;
+		}
 	}
 
 	&__form {
-		width: 40%;
+		width: 100%;
+		@include media('sm') {
+			width: 40%;
+		}
 	}
 }

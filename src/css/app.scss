@@ -56,16 +56,23 @@ h1, h2, h3, h4, h5, h6 {
 	&__title {
 		margin: 0;
 		@include font('w');
-		font-size: 3em;
+		font-size: 1.4em;
 		line-height: 1;
 		letter-spacing: 1px;
 		text-transform: uppercase;
+		@include media('sm') {
+			font-size: 3em;
+		}
 	}
 
 	&__desc {
-		width: 50%;
+		width: 100%;
 		margin-top: 20px;
-		font-size: 1.2em;
+		font-size: 1em;
+		@include media('sm') {
+			font-size: 1.2em;
+			width: 50%;
+		}
 	}
 
 }

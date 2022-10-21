@@ -2,10 +2,10 @@
 	display: none;
 	&__control {
 		position: fixed;
-		bottom: 30px;
-		right: 30px;
-		width: 100px;
-		height: 100px;
+		bottom: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
 		z-index: 9000;
 		background-color: fade-out(#fff, .6);
 		@include rounded(100%);
@@ -13,6 +13,12 @@
 		@include ease(.2s);
 		transform: rotate(90deg);
 		cursor: pointer;
+		@include media('sm') {
+			bottom: 30px;
+			right: 30px;
+			width: 100px;
+			height: 100px;
+		}
 		&::before {
 			width: 60%;
 			height: 60%;

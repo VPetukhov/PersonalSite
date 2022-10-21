@@ -21,7 +21,7 @@
 
 @mixin primary-btn() {
 	display: inline-flex;
-	padding: 26px 60px;
+	padding: 16px 40px;
 	color: #fff;
 	background: linear-gradient(135deg, $blue 10%, $dark 100%);
 	border: 0;
@@ -31,6 +31,9 @@
 	@include ease(.4s);
 	box-shadow: 40px 20px 120px fade-out($blue, .2);
 	cursor: pointer;
+	@include media('sm') {
+		padding: 26px 60px;
+	}
 	span {
 		line-height: 1;
 		@include ease(.2s);

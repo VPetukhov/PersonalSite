@@ -1,6 +1,8 @@
 .help {
-	z-index: 900;
-	padding: 100px 0;
+	padding: 40px 0;
+	@include media('sm') {
+		padding: 100px 0;
+	}
 
 	&::after {
 		position: absolute;
@@ -45,7 +47,10 @@
 	}
 
 	&__header {
-		margin-bottom: 100px;
+		margin-bottom: 40px;
+		@include media('ms') {
+			margin-bottom: 100px;
+		}
 	}
 
 	&__title, &__desc {
@@ -55,10 +60,23 @@
 	&__body {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		@include media('sm') {
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__section {
-		width: 44%;
+		width: 100%;
+		margin-bottom: 40px;
+		@include media('sm') {
+			width: 44%;
+			margin-bottom: 0;
+		}
+	}
+
+	&__section:last-child {
+		margin-bottom: 0;
 	}
 
 	&__section-title {
@@ -68,9 +86,14 @@
 		background-color: $blue;
 		border: 1px transparent solid;
 		@include font('w');
-		font-size: 1.2em;
-		white-space: nowrap;
-		@include rounded(100em);
+		font-size: .8em;
+		white-space: normal;
+		@include rounded(10px);
+		@include media('sm') {
+			font-size: 1.2em;
+			white-space: nowrap;
+			@include rounded(100em);
+		}
 	}
 
 	&__accordion {
@@ -78,8 +101,11 @@
 	}
 
 	&__accordion-item {
-		padding: 40px 0;
+		padding: 20px 0;
 		border-bottom: 1px #fff solid;
+		@include media('sm') {
+			padding: 40px 0;
+		}
 	}
 
 	&__accordion-item.is-open &__accordion-switcher {
@@ -96,18 +122,28 @@
 		justify-content: space-between;
 		align-items: center;
 		@include font('w');
-		font-size: 1.2em;
+		font-size: .8em;
+		line-height: 1.2;
+		@include media('sm') {
+			font-size: 1.2em;
+		}
 	}
 
 	&__accordion-switcher {
-		width: 30px;
-		height: 30px;
-		margin-right: 20px;
+		flex-shrink: 0;
+		width: 20px;
+		height: 20px;
+		margin-right: 0;
 		@include icon-stroke('close', #fff, 2);
 		transform: rotate(45deg);
 		opacity: .5;
 		@include ease(.2s);
 		cursor: pointer;
+		@include media('sm') {
+			width: 30px;
+			height: 30px;
+			margin-right: 20px;
+		}
 	}
 
 	&__accordion-switcher:hover {
@@ -116,23 +152,33 @@
 
 	&__accordion-desc {
 		display: none;
-		width: 80%;
-		font-size: 1.2em;
+		width: 100%;
+		font-size: .8em;
 		opacity: .6;
 		overflow: hidden;
+		@include media('sm') {
+			width: 80%;
+			font-size: 1.2em;
+		}
 	}
 
 	&__list {
 	}
 
 	&__list-item {
-		padding: 40px 0;
+		padding: 20px 0;
 		border-bottom: 1px #fff solid;
+		@include media('sm') {
+			padding: 40px 0;
+		}
 	}
 
 	&__list-title {
 		color: #fff;
 		@include font('w');
-		font-size: 1.2em;
+		font-size: .8em;
+		@include media('sm') {
+			font-size: 1.2em;
+		}
 	}
 }

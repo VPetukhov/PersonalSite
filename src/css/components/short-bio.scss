@@ -1,16 +1,24 @@
 .short-bio {
 	z-index: 900;
 	color: #fff;
-	padding: 100px 0 140px;
+	padding: 20px 0;
+	@include media('sm') {
+		padding: 100px 0 140px;
+	}
 	&__layout {
 		@include layout();
 	}
 
 	&__content {
-		width: 70%;
+		width: 100%;
 		margin-bottom: 40px;
 		@include font('r');
-		font-size: 1.2em;
+		font-size: 1em;
+		@include media('sm') {
+			width: 70%;
+			font-size: 1.2em;
+
+		}
 	}
 
 	&__link {
