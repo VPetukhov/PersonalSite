@@ -131,6 +131,10 @@
 		border-color: $blue;
 	}
 
+	&__contacts-mail-copy.copied {
+		@include icon-stroke('checkmark', #fff, 1px);
+	}
+
 	&__social {
 		margin: 20px 0;
 		@include media('lg') {
