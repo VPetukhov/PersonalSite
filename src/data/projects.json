@@ -1,10 +1,26 @@
 [
 	{
-		"id": 1,
-		"title": "Project 1. SPb"
+		"title": "Viaduct",
+		"desc": "R&D, developing of a novel algorithm for interpretable detection of truck failures",
+		"tags": ["R&D", "interpretability"],
+		"link": "https://google.com/1"
 	},
 	{
-		"id": 2,
-		"title": "Project 2. Moscow"
+		"title": "Talist",
+		"desc": "Analyzed thousands of job ads within the alternative protein industry, which provided major improvements for business strategy of the HR agency working within it.",
+		"tags": ["strategy", "NLP", "scrapping", "analytics"],
+		"link": "https://google.com/2"
+	},
+	{
+		"title": "Drone solutions",
+		"desc": "Created a strategy for creating a computer vision department in a drone-producing start-up. It helped to raise >$300k funding and the department was successfully created.",
+		"tags": ["strategy", "fundraising", "CV"],
+		"link": "https://google.com/3"
+	},
+	{
+		"title": "Phystech ventures",
+		"desc": "Evaluated machine learning methods of biotech companies, which applied for funding.",
+		"tags": ["fundraising", "bio"],
+		"link": "https://google.com/4"
 	}
 ]

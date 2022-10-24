@@ -72,7 +72,6 @@
 }
 .step {
 	
-
 	opacity: .5;
 	@include ease(.2s);
 	margin-bottom: 40px;
@@ -120,12 +119,19 @@
 	}
 
 	&__title {
+		margin-bottom: 5px;
 		@include font('w');
-		margin-bottom: 20px;
 		color: #fff;
+		@include media('sm') {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__desc {
 		color: #fff;
+		font-size: .8em;
+		@include media('sm') {
+			font-size: 1em;
+		}
 	}
 }

@@ -4,8 +4,9 @@
 	"description": "",
 	"scripts": {
 		"eleventy": "npx @11ty/eleventy --serve",
-		"gulp": "npx gulp watch",
-		"start": "concurrently \"npm run gulp\" \"npm run eleventy\""
+		"gulp:watch": "npx gulp watch",
+		"gulp:build": "npx gulp build",
+		"start": "npm run gulp:build & concurrently \"npm run gulp:watch\" \"npm run eleventy\""
 	},
 	"dependencies": {
 		"@babel/polyfill": "^7.12.1",

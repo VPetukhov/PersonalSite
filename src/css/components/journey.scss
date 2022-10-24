@@ -34,9 +34,16 @@
 }
 
 .journey-list {
-	margin-top: 100px;
+	margin-top: 40px;
+	@include media('sm') {
+		margin-top: 100px;
+	}
 	&__item {
-		padding-bottom: 100px;
+		padding-bottom: 40px;
+		@include media('sm') {
+			padding-bottom: 100px;
+
+		}
 	}
 
 	&__item::before {
@@ -46,7 +53,9 @@
 		left: 50%;
 		background-color: fade-out(#fff, .7);
 		pointer-events: none;
-		content: '';
+		@include media('sm') {
+			content: '';
+		}
 	}
 
 	&__item::after {
@@ -62,24 +71,19 @@
 		filter: blur(20px);
 		@include rounded(100%);
 		pointer-events: none;
-		content: '';
+		@include media('sm') {
+			content: '';
+		}
 	}
 
 	&__item-section {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		padding: 60px 0;
-	}
-
-	&__item-section::before1 {
-		position: absolute;
-		width: 100%;
-		height: 1px;
-		bottom: 0;
-		left: 50%;
-		background-color: fade-out(#fff, .7);
-		pointer-events: none;
-		content: '';
+		@include media('sm') {
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__item:nth-child(odd) &__item-period {
@@ -87,11 +91,16 @@
 	}
 
 	&__item:nth-child(odd) &__item-cover {
-		order: 1;
+		@include media('sm') {
+			order: 1;
+
+		}
 	}
 
 	&__item:nth-child(odd) &__item-desc {
-		order: 2;
+		@include media('sm') {
+			order: 2;
+		}
 	}
 
 	&__item:nth-child(odd) &__item-cover-layout::before {
@@ -104,17 +113,32 @@
 	}
 
 	&__item:nth-child(even) &__item-cover {
-		order: 2;
+		@include media('sm') {
+			order: 2;
+		}
 	}
 
 	&__item:nth-child(even) &__item-desc {
-		order: 1;
+		@include media('sm') {
+			order: 1;
+		}
+	}
+
+	&__item-cover {
+		margin-bottom: 60px;
+		@include media('sm') {
+			margin-bottom: 0;
+
+		}
 	}
 
 	&__item-cover, &__item-desc {
-		width: 50%;
+		width: 100%;
 		display: flex;
 		justify-content: center;
+		@include media('sm') {
+			width: 50%;
+		}
 	}
 
 	&__item-cover-container {
@@ -124,9 +148,15 @@
 	}
 
 	&__item-cover-layout {
-		width: 300px;
-		height: 300px;
+		flex-shrink: 0;
+		width: 200px;
+		height: 200px;
 		z-index: 1;
+		
+		@include media('sm') {
+			width: 300px;
+			height: 300px;
+		}
 	}
 
 	&__item-cover-img {
@@ -139,8 +169,8 @@
 
 	&__item-cover-layout::before {
 		position: absolute;
-		width: 360px;
-		height: 360px;
+		width: 220px;
+		height: 220px;
 		bottom: 0;
 		left: 0;
 		z-index: 0;
@@ -149,16 +179,23 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		content: '';
+		@include media('sm') {
+			width: 360px;
+			height: 360px;
+		}
 	}
 
 	&__item-period {
-		width: 50%;
+		width: 100%;
 		display: flex;
 		justify-content: center;
+		@include media('sm') {
+			width: 50%;
+		}
 	}
 
 	&__item-period-date {
-		width: 70%;
+		width: 100%;
 		padding: 10px 0;
 		color: #fff;
 		border: 1px #fff solid;
@@ -167,11 +204,17 @@
 		line-height: 1;
 		text-align: center;
 		@include rounded(100em);
+		@include media('sm') {
+			width: 70%;
+		}
 	}
 
 	&__item-content {
 		color: #fff;
-		width: 70%;
+		width: 100%;
+		@include media('sm') {
+			width: 70%;
+		}
 	}
 
 	&__item-content p {

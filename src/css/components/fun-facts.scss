@@ -1,6 +1,5 @@
 .fun-facts {
 	background-color: #fff;
-	padding: 100px 0;
 
 	&__layout {
 		@include layout();
@@ -9,92 +8,11 @@
 
 	&__header {
 		display: flex;
-		justify-content: center;
+		@include media('sm') {
+			justify-content: center;
+			margin-bottom: 60px;
+		}
 	}
-
-	&__cover {
-		margin: 100px 0 300px;
-		width: 300px;
-		height: 300px;
-	}
-
-	&__cover-img {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		@include rounded(20px);
-	}
-
-	&__cover::before {
-		position: absolute;
-		width: 360px;
-		height: 360px;
-		bottom: 0;
-		left: 0;
-		background-image: url('../img/blenda.svg');
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: contain;
-		content: '';
-	}
-
-	&__title {
-		position: absolute;
-		@include font('w');
-		font-size: 10em;
-		line-height: .8;
-		text-transform: uppercase;
-		letter-spacing: 5px;
-		white-space: nowrap;
-		text-align: center;
-	}
-
-	&__title span {
-		position: relative;
-		z-index: 1;
-	}
-
-
-	&__title--first {
-		bottom: 0;
-		right: 100%;
-		margin-right: 30px;
-		margin-bottom: -20px;
-	}
-
-	&__title--last {
-		top: 100%;
-		left: -10px;
-		margin-top: 40px;
-	}
-
-	&__title--last::after {
-		position: absolute;
-		top: -180px;
-		right: -180px;
-		width: 500px;
-		height: 500px;
-		z-index: 0;
-		background: radial-gradient(fade-out($blue, 0) 0%, fade-out($pink, .6) 50%);
-		filter: blur(80px);
-		@include rounded(100%);
-		pointer-events: none;
-		content: '';
-	}
-
-
-
-
-	&__title-cover {
-	}
-
-	&__title-cover-img {
-	}
-
-	&__title-last {
-	}
-
 
 	&__body {
 	}
@@ -112,13 +30,24 @@
 	}
 }
 .fun-fact {
-	width: 33.3333%;
-	margin-bottom: 100px;
+	width: 100%;
+	margin-bottom: 20px;
+	@include media('sm') {
+		width: 33.3333%;
+		margin-bottom: 100px;
+	}
 	&__layout {
-		width: 70%;
+		width: 100%;
+		@include media('sm') {
+			width: 70%;
+		}
 	}
 	p {
 		margin: 0 0 5px 0;
+		font-size: .8em;
+		@include media('sm') {
+			font-size: 1em;
+		}
 	}
 	a {
 		@include link($dark, $blue);
@@ -127,5 +56,106 @@
 	}
 	a:hover {
 		border-bottom-color: $blue;
+	}
+}
+
+.fun-facts-cover {
+
+	margin: 0 0 40px;
+	@include media('sm') {
+		margin: 0 0 240px;
+	}
+
+	&__picture {
+		width: 240px;
+		height: 240px;
+		margin: 0 0 40px 0;
+		@include media('sm') {
+			width: 300px;
+			height: 300px;
+			margin: 0;
+		}
+	}
+
+	&__picture::before {
+		position: absolute;
+		width: 280px;
+		height: 280px;
+		bottom: 0;
+		left: 0;
+		background-image: url('../img/blenda.svg');
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: '';
+		@include media('sm') {
+			width: 360px;
+			height: 360px;
+		}
+	}
+
+	&__img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@include rounded(20px);
+	}
+
+	&__title {
+	}
+
+	&__title span {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__title-word {
+		@include font('w');
+		font-size: 4em;
+		line-height: .8;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		white-space: nowrap;
+		z-index: 1;
+		@include media('sm') {
+			position: absolute;
+			font-size: 10em;
+		}
+		&--first {
+			@include media('sm') {
+				bottom: 0;
+				right: 100%;
+				margin-right: 30px;
+				margin-bottom: -20px;
+			}
+		}
+
+		&--last {
+			@include media('sm') {
+				top: 100%;
+				left: -10px;
+				margin-top: 40px;
+			}
+		}
+		&--last::after {
+			position: absolute;
+			top: -100px;
+			right: -100px;
+			width: 300px;
+			height: 300px;
+			z-index: 0;
+			background: radial-gradient(fade-out($blue, 0) 0%, fade-out($pink, .6) 50%);
+			filter: blur(80px);
+			@include rounded(100%);
+			pointer-events: none;
+			content: '';
+			@include media('sm') {
+				top: -180px;
+				right: -180px;
+				width: 500px;
+				height: 500px;
+			}
+		}
 	}
 }

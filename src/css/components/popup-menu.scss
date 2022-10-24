@@ -7,7 +7,7 @@
 	height: 100%;
 	z-index: 8000;
 	color: #fff;
-	background: linear-gradient(135deg, $blue 0%, $pink 100%);
+	background: radial-gradient(farthest-corner at 20% 10%, fade-out($blue, 0) 0%, fade-out($pink, 0) 80%, fade-out($pink, 0) 100%);
 	@include ease(.2s);
 	overflow-y: auto;
 
