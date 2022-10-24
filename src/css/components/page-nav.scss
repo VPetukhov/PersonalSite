@@ -9,7 +9,7 @@
 		@include font('w');
 		font-size: 1em;
 		color: #fff;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1.6em;
 		}
 	}
@@ -17,7 +17,7 @@
 	&__menu {
 		border-top: 1px #fff solid;
 		padding-top: 20px;
-		@include media('sm') {
+		@include media('lg') {
 			padding-top: 40px;
 		}
 	}
@@ -27,16 +27,16 @@
 		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		@include media('sm') {
+		@include media('lg') {
+			justify-content: space-between;
 			flex-wrap: nowrap;
 		}
 	}
 
 	&__list-item {
 		list-style: none;
-		margin-bottom: 10px;
-		@include media('sm') {
+		margin: 10px 10px 0 0;
+		@include media('lg') {
 			margin-bottom: 0;
 		}
 	}
@@ -50,7 +50,7 @@
 		@include link(#fff, #fff);
 		@include rounded(100em);
 		white-space: nowrap;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1.2em;
 			padding: 10px 30px;
 		}

@@ -1,6 +1,6 @@
 .about-header {
 	padding: 40px 0;
-	@include media('sm') {
+	@include media('lg') {
 		padding: 100px 0;
 	}
 	&__layout {
@@ -8,7 +8,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		@include media('sm') {
+		@include media('lg') {
 			flex-wrap: nowrap;
 		}
 	}
@@ -45,7 +45,7 @@
 		z-index: 1;
 		width: 100%;
 		margin-bottom: 20px;
-		@include media('sm') {
+		@include media('lg') {
 			width: 40%;
 			margin-bottom: 0;
 		}
@@ -55,7 +55,7 @@
 		width: 200px;
 		height: 200px;
 		z-index: 1;
-		@include media('sm') {
+		@include media('lg') {
 			width: 400px;
 			height: 400px;
 		}
@@ -73,7 +73,7 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		content: '';
-		@include media('sm') {
+		@include media('lg') {
 			left: auto;
 			right: 0;
 			bottom: -60px;
@@ -93,7 +93,7 @@
 	&__content {
 		z-index: 1;
 		width: 100%;
-		@include media('sm') {
+		@include media('lg') {
 			width: 60%;
 		}
 	}
@@ -106,13 +106,13 @@
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		white-space: nowrap;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 10em;
 		}
 	}
 
 	&__content-subtitle {
-		@include media('sm') {
+		@include media('lg') {
 			display: flex;
 		}
 	}
@@ -126,7 +126,7 @@
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		white-space: nowrap;
-		@include media('sm') {
+		@include media('lg') {
 			left: -15px;
 			font-size: 10em;
 		}
@@ -136,7 +136,7 @@
 		margin-top: 20px;
 		font-size: .8em;
 		color: #fff;
-		@include media('sm') {
+		@include media('lg') {
 			margin-top: 0;
 			top: 4px;
 			font-size: 1em;

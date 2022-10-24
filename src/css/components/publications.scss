@@ -48,7 +48,7 @@
 	&__body {
 		margin-top: 40px;
 		z-index: 1;
-		@include media('sm') {
+		@include media('lg') {
 			margin-top: 100px;
 		}
 	}
@@ -56,7 +56,7 @@
 	&__section {
 		margin-bottom: 40px;
 		counter-reset: section;
-		@include media('sm') {
+		@include media('lg') {
 			margin-left: 10%;
 			margin-bottom: 100px;
 		}
@@ -67,7 +67,7 @@
 		color: #fff;
 		@include font('w');
 		font-size: 1.2em;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 2em;
 		}
 	}
@@ -93,7 +93,7 @@
 		@include rounded(100%);
 		counter-increment: section;
 		content: counter(section);
-		@include media('sm') {
+		@include media('lg') {
 			display: flex;
 		}
 	}
@@ -103,7 +103,7 @@
 		color: #fff;
 		font-size: .8em;
 		@include font('w');
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1em;
 		}
 	}
@@ -111,7 +111,7 @@
 	&__item-desc {
 		font-size: .8em;
 		color: fade-out(#fff, .5);
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1em;
 		}
 	}

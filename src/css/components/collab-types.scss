@@ -1,7 +1,7 @@
 .collab-types {
 	z-index: 10;
 	padding: 0 0 20px 0;
-	@include media('sm') {
+	@include media('lg') {
 		padding: 0 0 200px 0;
 	}
 	&__layout {
@@ -14,7 +14,7 @@
 		flex-wrap: wrap;
 		margin: 0;
 		padding: 0;
-		@include media('sm') {
+		@include media('lg') {
 			flex-wrap: nowrap;
 		}
 	}
@@ -23,7 +23,7 @@
 	width: 100%;
 	list-style: none;
 	margin-bottom: 40px;
-	@include media('sm') {
+	@include media('lg') {
 		width: 25%;
 		margin-bottom: 0;
 	}
@@ -36,7 +36,7 @@
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		color: #fff;
-		@include media('sm') {
+		@include media('lg') {
 			margin-bottom: 20px;
 			font-size: 1.8em;
 		}
@@ -45,7 +45,7 @@
 	&__desc {
 		font-size: .8em;
 		color: fade-out(#fff, .2);
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1em;
 		}
 	}

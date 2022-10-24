@@ -6,7 +6,7 @@
 		right: 20px;
 		width: 40px;
 		height: 40px;
-		z-index: 9000;
+		z-index: 7000;
 		background-color: fade-out(#fff, .6);
 		@include rounded(100%);
 		@include icon-stroke('arrow', $dark, 1px);

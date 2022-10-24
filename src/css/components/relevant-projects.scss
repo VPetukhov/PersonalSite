@@ -1,7 +1,7 @@
 .relevant-projects {
 	background-color: #fff;
 	padding: 0 0 20px 0;
-	@include media('sm') {
+	@include media('lg') {
 		padding: 0 0 100px 0;
 	};
 
@@ -69,7 +69,7 @@
 
 	&__body {
 		margin-top: 40px;
-		@include media('sm') {
+		@include media('lg') {
 			margin-top: 100px;
 		}
 	}
@@ -84,7 +84,7 @@
 		flex-wrap: wrap;
 		margin: 0 -20px;
 		padding: 0;
-		@include media('sm') {
+		@include media('lg') {
 			flex-wrap: nowrap;
 		}
 	}
@@ -97,7 +97,7 @@
 	width: 100%;
 	list-style: none;
 	margin-bottom: 20px;
-	@include media('sm') {
+	@include media('lg') {
 		width: 50%;
 		margin-bottom: 0;
 	}
@@ -109,7 +109,7 @@
 		box-shadow: 0 40px 100px fade-out($dark, .8);
 		@include rounded(24px);
 		@include ease(.2s);
-		@include media('sm') {
+		@include media('lg') {
 			padding: 60px;
 		};
 	}
@@ -130,7 +130,7 @@
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		@include ease(.2s);
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 2.2em;
 		}
 	}
@@ -151,7 +151,7 @@
 
 	&__short-desc {
 		font-size: .8em;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1.2em;
 		}
 		p {

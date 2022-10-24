@@ -2,7 +2,7 @@
 	z-index: 900;
 	color: #fff;
 	padding: 20px 0;
-	@include media('sm') {
+	@include media('lg') {
 		padding: 100px 0 140px;
 	}
 	&__layout {
@@ -14,7 +14,7 @@
 		margin-bottom: 40px;
 		@include font('r');
 		font-size: 1em;
-		@include media('sm') {
+		@include media('lg') {
 			width: 70%;
 			font-size: 1.2em;
 

@@ -1,7 +1,7 @@
 .page-header {
 
 	padding: 40px 0;
-	@include media('sm') {
+	@include media('lg') {
 		padding: 100px 0;
 	}
 
@@ -41,7 +41,7 @@
 		z-index: 1;
 		color: #fff;
 		font-size: 1.4em;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 4em;
 		}
 	}

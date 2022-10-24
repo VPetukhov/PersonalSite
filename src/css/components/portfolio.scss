@@ -2,7 +2,7 @@
 	background-color: #fff;
 	padding: 0 0 60px 0;
 
-	@include media('sm') {
+	@include media('lg') {
 		padding: 0 0 200px 0;
 	}
 
@@ -48,7 +48,7 @@
 
 	&__section {
 		margin-top: 40px;
-		@include media('sm') {
+		@include media('lg') {
 			margin-top: 100px;
 		}
 	}
@@ -69,7 +69,7 @@
 		border: 1px $blue solid;
 		padding: 4px 20px;
 		@include rounded(100em);
-		@include media('sm') {
+		@include media('lg') {
 			margin-bottom: 40px;
 			font-size: 1.6em;
 			padding: 10px 30px;
@@ -83,7 +83,7 @@
 		padding: 20px 0;
 		@include ease(.1s);
 		border-bottom: 1px $dark solid;
-		@include media('sm') {
+		@include media('lg') {
 			flex-wrap: nowrap;
 			padding: 40px;
 		}
@@ -98,7 +98,7 @@
 		width: 100%;
 		@include font('w');
 		font-size: 1em;
-		@include media('sm') {
+		@include media('lg') {
 			width: 30%;
 			padding-right: 40px;
 			font-size: 1.2em;
@@ -108,7 +108,7 @@
 	&__item-summary {
 		width: 100%;
 		margin-bottom: 20px;
-		@include media('sm') {
+		@include media('lg') {
 			width: 45%;
 			padding-right: 40px;
 			margin-bottom: 0;
@@ -122,7 +122,7 @@
 
 	&__item-summary-desc {
 		font-size: .8em;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1em;
 		}
 	}
@@ -139,7 +139,7 @@
 
 	&__item-lang {
 		width: 50%;
-		@include media('sm') {
+		@include media('lg') {
 			width: 10%;
 		}
 	}
@@ -153,7 +153,7 @@
 		border: 1px $dark solid;
 		font-size: .8em;
 		white-space: nowrap;
-		@include media('sm') {
+		@include media('lg') {
 			display: flex;
 			width: 100px;
 			height: 100px;
@@ -167,7 +167,7 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		@include media('sm') {
+		@include media('lg') {
 			width: 15%;
 		}
 	}
@@ -181,7 +181,7 @@
 		@include icon-stroke('arrow', $dark, 2px);
 		@include ease(.1s);
 		transform: rotate(180deg);
-		@include media('sm') {
+		@include media('lg') {
 			width: 100px;
 			height: 100px;
 		}

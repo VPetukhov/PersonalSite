@@ -1,7 +1,7 @@
 .experience {
 	z-index: 10;
 	padding: 0 0 40px 0;
-	@include media('sm') {
+	@include media('lg') {
 		padding: 0 0 200px 0;
 	}
 	&__layout {
@@ -10,7 +10,7 @@
 
 	&__section {
 		margin-top: 40px;
-		@include media('sm') {
+		@include media('lg') {
 			margin-top: 100px;
 		}
 	}
@@ -32,7 +32,7 @@
 		background-color: $blue;
 		padding: 10px 30px;
 		@include rounded(100em);
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1.6em;
 			padding: 10px 30px;
 		}
@@ -43,7 +43,7 @@
 		margin: 60px 0 30px 0;
 		padding: 0 60px;
 		color: fade-out(#fff, .7);
-		@include media('sm') {
+		@include media('lg') {
 			display: flex;
 		}
 	}
@@ -73,7 +73,7 @@
 		padding: 20px;
 		@include ease(.1s);
 		@include rounded(20px);
-		@include media('sm') {
+		@include media('lg') {
 			padding: 60px;
 			flex-wrap: nowrap;
 		}
@@ -87,7 +87,7 @@
 		width: 100%;
 		@include font('w');
 		margin-bottom: 20px;
-		@include media('sm') {
+		@include media('lg') {
 			width: 25%;
 			margin-bottom: 0;
 		}
@@ -97,7 +97,7 @@
 		width: 100%;
 		color: #fff;
 		margin-bottom: 20px;
-		@include media('sm') {
+		@include media('lg') {
 			width: 25%;
 			margin-bottom: 0;
 		}
@@ -107,7 +107,7 @@
 		width: 100%;
 		color: #fff;
 		margin-bottom: 20px;
-		@include media('sm') {
+		@include media('lg') {
 			width: 25%;
 			margin-bottom: 0;
 		}
@@ -116,7 +116,7 @@
 	&__item-place-name {
 		padding-right: 40px;
 		font-size: .8em;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1em;
 		}
 	}
@@ -125,13 +125,13 @@
 		width: 100%;
 		color: #fff;
 		font-size: .8em;
-		@include media('sm') {
+		@include media('lg') {
 			width: 25%;
 			font-size: 1em;
 		}
 		p {
 			margin: 0 0 10px 0;
-			@include media('sm') {
+			@include media('lg') {
 				margin: 0 0 20px 0;
 			}
 		}
@@ -155,7 +155,7 @@
 		font-size: .7em;
 		border: 1px fade-out(#fff, .6) solid;
 		@include rounded(100em);
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1em;
 			margin-top: -20px;
 			padding: 8px 20px;

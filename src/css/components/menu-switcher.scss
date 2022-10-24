@@ -7,7 +7,7 @@
 	line-height: 0;
 	background-color: fade-out($dark, .8);
 	@include rounded(0 0 0 10px);
-	@include media('bg') {
+	@include media('lg') {
 		display: none;
 	}
 }

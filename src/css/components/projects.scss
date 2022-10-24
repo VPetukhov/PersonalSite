@@ -1,7 +1,7 @@
 .projects {
 	background-color: #fff;
 	padding: 20px 0 200px;
-	@include media('sm') {
+	@include media('lg') {
 		padding: 100px 0 400px;
 	}
 

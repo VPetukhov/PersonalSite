@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 1;
 		letter-spacing: 1px;
 		text-transform: uppercase;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 3em;
 		}
 	}
@@ -72,8 +72,10 @@ h1, h2, h3, h4, h5, h6 {
 		width: 100%;
 		margin-top: 20px;
 		font-size: .8em;
-		@include media('sm') {
+		@include media('lg') {
 			font-size: 1.2em;
+		}
+		@include media('lg') {
 			width: 50%;
 		}
 	}

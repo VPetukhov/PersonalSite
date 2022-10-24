@@ -2,7 +2,7 @@
 	padding: 60px 0;
 	z-index: 1000;
 	display: none;
-	@include media('sm') {
+	@include media('lg') {
 		display: block;
 	}
 	&__layout {
