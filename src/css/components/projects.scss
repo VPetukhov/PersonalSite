@@ -45,7 +45,7 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin: 0 -20px;
-		@include media('sm') {
+		@include media('bg') {
 			flex-wrap: nowrap;
 		}
 	}
@@ -53,27 +53,29 @@
 	&__item {
 		width: 100%;
 		@include media('sm') {
+		}
+		@include media('md') {
+			width: 50%;
+		}
+		@include media('bg') {
 			width: 25%;
 		}
 	}
 }
 
 .project {
-	margin: 0 20px 20px;
-	@include media('sm') {
-		margin: 0 20px;
-	}
-
+	margin-bottom: 40px;
 	&__link {
+		height: 100%;
+		padding: 30px;
+		margin: 0 20px;
 		display: block;
 		text-decoration: none;
 		@include link($dark, $blue);
-		height: 100%;
-		padding: 30px;
 		background-color: mix($dark, #fff, 6%);
 		@include rounded(20px);
 		@include ease(.3s);
-		@include media('sm') {
+		@include media('lg') {
 			padding: 50px;
 		}
 	}
@@ -89,7 +91,7 @@
 		line-height: 1;
 		text-transform: uppercase;
 		@include ease(.2s);
-		@include media('sm') {
+		@include media('md') {
 			font-size: 2em;
 		}
 	}
@@ -103,7 +105,7 @@
 
 	&__desc {
 		font-size: .8em;
-		@include media('sm') {
+		@include media('md') {
 			font-size: 1em;
 		}
 	}
@@ -129,7 +131,7 @@
 		white-space: nowrap;
 		font-size: .6em;
 		@include rounded(100em);
-		@include media('sm') {
+		@include media('md') {
 			padding: 4px 14px;
 			font-size: .8em;
 		}

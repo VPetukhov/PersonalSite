@@ -7,9 +7,11 @@
 	}
 	&__layout {
 		@include layout();
+		display: flex;
+		justify-content: flex-end;
 	}
 	.mainmenu {
-
+		width: 70%;
 		&__list {
 			margin: 0;
 			padding: 0;
