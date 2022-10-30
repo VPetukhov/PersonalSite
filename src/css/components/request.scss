@@ -52,6 +52,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		z-index: 1;
 		@include media('lg') {
 			flex-wrap: nowrap;
 		}
@@ -135,7 +136,7 @@
 		@include icon-stroke('checkmark', #fff, 1px);
 	}
 
-	&__social {
+	&__links {
 		margin: 20px 0;
 		@include media('lg') {
 			margin: auto 0 20px;

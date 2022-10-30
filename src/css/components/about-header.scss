@@ -117,6 +117,10 @@
 		}
 	}
 
+	&__content-links {
+		margin-top: 40px;
+	}
+
 	&__content-me {
 		left: 0;
 		color: #fff;
@@ -141,10 +145,6 @@
 			top: 4px;
 			font-size: 1em;
 		}
-	}
-
-	.social {
-		margin-top: 40px;
 	}
 
 }

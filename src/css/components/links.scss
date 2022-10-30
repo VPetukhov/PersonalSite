@@ -1,0 +1,57 @@
+.links {
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		list-style: none;
+		margin: 0 10px 10px 0;
+	}
+
+	&__item-href {
+		position: relative;
+		display: block;
+		width: 40px;
+		height: 40px;
+		border: 1px #fff solid;
+		@include link(#fff, $blue);
+		@include rounded(100%);
+		@include media('lg') {
+			width: 60px;
+			height: 60px;
+		}
+		&:hover {
+			background-color: $blue;
+			border-color: $blue;
+		}
+	}
+
+	&__item-href--twitter {
+		@include icon-fill('twitter', #fff);
+	}
+
+	&__item-href--linkedin {
+		@include icon-fill('linkedin', #fff);
+	}
+
+	&__item-href--github {
+		@include icon-fill('github', #fff);
+	}
+
+	&__item-href--telegram {
+		@include icon-fill('telegram', #fff);
+	}
+
+	&__item-href--slides {
+		@include icon-fill('slides', #fff);
+	}
+
+	&__item-href--scholar {
+		@include icon-fill('scholar', #fff);
+	}
+
+}
