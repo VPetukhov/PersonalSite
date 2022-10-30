@@ -1,0 +1,163 @@
+[
+	{
+		"title": "Computational biology",
+		"projects": [
+			{
+				"title": "dropEst",
+				"desc": "low-level pre-processing of scRNA-seq fastq files for accurate estimation of gene expression matrices",
+				"link": "https://github.com/kharchenkolab/dropEst",
+				"pub": {
+					"title": "Genome Biology, 2018",
+					"link": "https://doi.org/10.1186/s13059-018-1449-6"
+				},
+				"lang": {
+					"title": "C++",
+					"logo_url" : "c++.png"
+				}
+			},
+			{
+				"title": "pagoda2",
+				"desc": "processing and analysis of individual scRNA-seq samples",
+				"link": "https://github.com/kharchenkolab/pagoda2",
+				"lang": {
+					"title": "R",
+					"logo_url" : "r.png"
+				}
+			},
+			{
+				"title": "conos",
+				"desc": "joint analysis of scRNA-seq collections",
+				"link": "https://github.com/kharchenkolab/conos",
+				"pub": {
+					"title": "Nature Methods, 2019",
+					"link": "https://doi.org/10.1038/s41592-019-0466-z"
+				},
+				"lang": {
+					"title": "R",
+					"logo_url" : "r.png"
+				}
+			},
+			{
+				"title": "cacoa",
+				"desc": "case-control analysis of scRNA-seq experiments",
+				"link": "https://github.com/kharchenkolab/cacoa",
+				"pub": {
+					"title": "bioRxiv, 2022",
+					"link": "https://doi.org/10.1101/2022.03.15.484475"
+				},
+				"lang": {
+					"title": "R",
+					"logo_url" : "r.png"
+				}
+			},
+			{
+				"title": "Baysor",
+				"desc": "Bayesian cell segmentation in single-molecule protocols for spatially-resolved transcriptomics",
+				"link": "https://github.com/kharchenkolab/Baysor",
+				"pub": {
+					"title": "Nature Biotech, 2021",
+					"link": "https://www.nature.com/articles/s41587-021-01044-w"
+				},
+				"lang": {
+					"title": "Julia",
+					"logo_url" : "julia.png"
+				}
+			},
+			{
+				"title": "CellAnnotatoR",
+				"desc": "marker-based annotationof scRNA-seq data",
+				"link": "https://github.com/khodosevichlab/CellAnnotatoR",
+				"lang": {
+					"title": "R",
+					"logo_url" : "r.png"
+				}
+			},
+			{
+				"title": "Comparison of single-molecule transcriptomic protocols",
+				"desc": "It was made at 2019 and is outdated now",
+				"link": "https://github.com/VPetukhov/SpatialProtocolComparison",
+				"lang": {
+					"title": "Python",
+					"logo_url" : "python.png"
+				}
+			},
+			{
+				"title": "vpscituls",
+				"desc": "my helper functions for single-cell analysis",
+				"link": "https://github.com/VPetukhov/vpscutils",
+				"lang": {
+					"title": "R",
+					"logo_url" : "r.png"
+				}
+			}
+		]
+	},
+	{
+		"title": "Machine learning",
+		"projects": [
+			{
+				"title": "Enforcing spatial structure on word2vec",
+				"desc": "Application of ideas from <a href=\"https://arxiv.org/pdf/1810.00424.pdf\">Interpretable Neuron Structuring with Graph Spectral Regularization</a> during my participation in the <a href=\"https://www.lesswrong.com/posts/QEmfyhqMcSpfnY2dX/how-teams-went-about-their-research-at-ai-safety-camp\">AI Safety Camp</a>",
+				"link": "https://github.com/VPetukhov/GraphRegularizedNNs",
+				"lang": {
+					"title": "Python",
+					"logo_url" : "python.png"
+				}
+			},
+			{
+				"title": "Piecewise-linear approximation",
+				"desc": "of 1D time-series using splines on stock data",
+				"link": "https://github.com/VPetukhov/StockSegmentation",
+				"lang": {
+					"title": "Python",
+					"logo_url" : "python.png"
+				}
+			}
+		]
+	},
+	{
+		"title": "General",
+		"projects": [
+			{
+				"title": "ggrastr",
+				"desc": "rasterize individual layers for ggplot2",
+				"link": "https://github.com/VPetukhov/ggrastr",
+				"lang": {
+					"title": "R",
+					"logo_url" : "r.png"
+				}
+			},
+			{
+				"title": "dataorganizer",
+				"desc": "a <a href=\"https://research-compendium.science/\">research compendium</a> package for scientific projects in R",
+				"link": "https://github.com/khodosevichlab/dataorganizer",
+				"lang": {
+					"title": "R",
+					"logo_url" : "r.png"
+				}
+			},
+			{
+				"title": "MailDay Extension for Thunderbird",
+				"desc": "implementation of the <a href=\"https://forum.mnogosdelal.ru/viewtopic.php?f=7&amp;t=865\">Maxim Dorofeev’s idea</a> on how to motivate yourself to proces old emails.",
+				"link": "https://github.com/VPetukhov/MailDayExtension",
+				"lang": {
+					"title": "JS",
+					"logo_url" : "js.png"
+				}
+			}
+		]
+	},
+	{
+		"title": "Personal",
+		"projects": [
+			{
+				"title": "Linux configs",
+				"link": "https://github.com/VPetukhov/linux_configs"
+			},
+			{
+				"title": "RStudio configs",
+				"link": "https://github.com/VPetukhov/rstudio_config"
+			}
+		]
+	}
+]

@@ -1,4 +1,4 @@
-.portfolio {
+.os-projects {
 	background-color: #fff;
 	padding: 0 0 60px 0;
 
@@ -115,11 +115,6 @@
 		}
 	}
 
-	&__item-summary a {
-		@include link($blue, $dark);
-		margin-bottom: 20px;
-	}
-
 	&__item-summary-desc {
 		font-size: .8em;
 		@include media('lg') {
@@ -127,7 +122,12 @@
 		}
 	}
 
-	&__item-summary-tag {
+	&__item-summary-desc a {
+		@include link($blue, $dark);
+		margin-bottom: 20px;
+	}
+
+	&__item-summary-pub {
 		display: inline-flex;
 		margin-top: 10px;
 		padding: 5px 10px;
@@ -135,6 +135,10 @@
 		color: fade-out($dark, .4);
 		border: 1px fade-out($dark, .8) solid;
 		@include rounded(100em);
+	}
+
+	&__item-summary-pub a {
+		@include link();
 	}
 
 	&__item-lang {
@@ -151,14 +155,16 @@
 		padding: 8px 20px;
 		@include rounded(20px);
 		border: 1px $dark solid;
-		font-size: .8em;
-		white-space: nowrap;
 		@include media('lg') {
 			display: flex;
 			width: 100px;
 			height: 100px;
 			padding: 0;
-			font-size: 1em;
+		}
+		img {
+			width: 60px;
+			height: 60px;
+			object-fit: contain;
 		}
 	}
 
@@ -168,6 +174,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		@include media('lg') {
+			align-items: flex-start;
 			width: 15%;
 		}
 	}
@@ -192,7 +199,10 @@
 	}
 
 	&__item-href-link:hover {
-		transform: rotate(180deg) translateX(-20px);
+		transform: rotate(180deg) translateX(-5px);
+		@include media('lg') {
+			transform: rotate(180deg) translateX(-20px);
+		}
 	}
 	
 }

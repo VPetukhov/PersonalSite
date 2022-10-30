@@ -1,249 +1,52 @@
 <a class="js-scroll-open-source"></a>
-<div class="portfolio">
-	<div class="portfolio__layout">
-		<div class="portfolio__stain portfolio__stain--top"></div>
-		<div class="portfolio__header">
-			<div class="portfolio__title section__title">My open source projects</div>
+<div class="os-projects">
+	<div class="os-projects__layout">
+		<div class="os-projects__stain os-projects__stain--top"></div>
+		<div class="os-projects__header">
+			<div class="os-projects__title section__title">My open source projects</div>
 		</div>
 
-		<div class="portfolio__body">
+		<div class="os-projects__body">
 
-			<div class="portfolio__section portfolio__section--biology">
-				<div class="portfolio__section-title">Computational biology</div>
+			{%- for section in open_source -%}
 
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">dropEst:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">low-level pre-processing of scRNA-seq fastq files for accurate estimation of gene expression matrices</div>
-						<div class="portfolio__item-summary-tag">Genome Biology, 2018</div>
+				<div class="os-projects__section">
+					<div class="os-projects__section-title">{{ section.title }}</div>
+					
+					{%- for project in section.projects -%}
+					<div class="os-projects__item">
+
+						<div class="os-projects__item-title">{{ project.title }}</div>
+
+						{% if project.desc %}
+						<div class="os-projects__item-summary">
+
+							<div class="os-projects__item-summary-desc">{{ project.desc | safe }}</div>
+
+							{% if project.pub %}
+							<div class="os-projects__item-summary-pub">
+								<a href="{{ project.pub.link }}" target="_blank">{{ project.pub.title }}</a>
+							</div>
+							{% endif %}
+
+						</div>
+						{% endif %}
+
+						{% if project.lang %}
+						<div class="os-projects__item-lang">
+							<div class="os-projects__item-lang-label" title="{{ project.lang.title }}"><img src="/img/{{ project.lang.logo_url }}" alt="{{ project.lang.title }}"></div>
+						</div>
+						{% endif %}
+
+						<div class="os-projects__item-href">
+							<a class="os-projects__item-href-link" href="{{ project.link }}" target="_blank"></a>
+						</div>
 					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">C++</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
+					{%- endfor -%}
+
 				</div>
-				<!-- item -->
 
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">pagoda2:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">processing and analysis of individual scRNA-seq samples</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">R</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">conos:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">joint analysis of scRNA-seq collections</div>
-						<div class="portfolio__item-summary-tag">Nature Methods, 2019</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">R</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">cacoa:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">case-control analysis of scRNA-seq experiments</div>
-						<div class="portfolio__item-summary-tag">bioRxiv, 2022</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">R</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">Baysor:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">Bayesian cell segmentation in single-molecule protocols for spatially-resolved transcriptomics</div>
-						<div class="portfolio__item-summary-tag">Nature Biotech, 2021</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">Julia</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">CellAnnotatoR:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">marker-based annotationof scRNA-seq data</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">R</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">Comparison of single-molecule transcriptomic protocols:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">It was made at 2019 and is outdated now</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">Python</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">vpscituls:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">my helper functions for single-cell analysis</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">R</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
-
-			<div class="portfolio__section portfolio__section--ml">
-				<div class="portfolio__section-title">Machine learning</div>
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">Enforcing spatial structure on word2vec</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">Application of ideas from <a href="#">Interpretable Neuron Structuring with Graph Spectral Regularization</a> during my participation in the <a href="#">AI Safety Camp</a></div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">Python</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">Piecewise-linear approximation </div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc"><a href="#">of 1D time-series</a> using splines on stock dat</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">Python</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
-
-			<div class="portfolio__section portfolio__section--general">
-				<div class="portfolio__section-title">General</div>
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">ggrastr:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">rasterize individual layers for ggplot2</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">R</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">dataorganizer:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">a <a href="#">research compendium</a> package for scientific projects in R</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">R</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">MailDay Extension for Thunderbird:</div>
-					<div class="portfolio__item-summary">
-						<div class="portfolio__item-summary-desc">implementation of the <a href="#">Maxim Dorofeev’s idea</a> on how to motivate yourself to proces old emails.</div>
-					</div>
-					<div class="portfolio__item-lang">
-						<div class="portfolio__item-lang-label">JS</div>
-					</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
-
-			<div class="portfolio__section portfolio__section--personal">
-				<div class="portfolio__section-title">Personal</div>
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">Linux configs</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="portfolio__item">
-					<div class="portfolio__item-title">RStudio configs</div>
-					<div class="portfolio__item-href">
-						<a class="portfolio__item-href-link" href="#"></a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
+			{%- endfor -%}
 
 		</div>
 
