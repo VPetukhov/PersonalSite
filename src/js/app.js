@@ -1,13 +1,13 @@
 import { scrollNav } from "./components/scroll-nav";
-import { helpAccordion } from "./components/help-accordion";
+import { skillsAccordion } from "./components/skills-accordion";
 import { jumpBtn } from "./components/jump-btn";
 import { popupMenu } from "./components/popup-menu";
 import { copyClipboard } from "./components/copy-clipboard";
 
 scrollNav.init();
 
-if(document.querySelector(".js-help-accordion") !== null)
-helpAccordion.init();
+if(document.querySelector(".js-skills-accordion") !== null)
+skillsAccordion.init();
 
 if(document.querySelector(".js-jump") !== null)
 jumpBtn.init();

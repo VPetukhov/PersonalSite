@@ -3,6 +3,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function(config) {
 
 	config.addWatchTarget('src/css/');
+	config.addWatchTarget('src/js/');
 
 	config.addPassthroughCopy({ 'src/media/img': 'img' });
 	config.addPassthroughCopy({ 'src/media/fonts': 'fonts' });

@@ -1,0 +1,43 @@
+[
+	{
+		"title": "Machine learning",
+		"skills": [
+			{
+				"title": "Direct work on your project",
+				"desc": "Analysing your data or developing novel machine learning methods for your problem"
+			},
+			{
+				"title": "R&D",
+				"desc": "Gathering data and building an MVP for testing new ideas"
+			},
+			{
+				"title": "Adding AI to your organization",
+				"desc": "Evaluating your ideas, building a prototype and getting funding.If you don’t have an AI department yet, but you think you need one, I can help that. From evaluating your ideas and prototyping the service to helping with funding applications and finding people for the department"
+			},
+			{
+				"title": "Make your organization data driven",
+				"desc": "Having right data can drastically improve strategic decision making, as well as company operations. I can help you to set up data pipelines, which would guide your decisions by providing insights from both data within your company and external sources, relevant to your problem."
+			}
+		]
+	},
+	{
+		"title": "Computational biology",
+		"skills": [
+			{
+				"title": "experiment design"
+			},
+			{
+				"title": "analysis and interpretation of data"
+			},
+			{
+				"title": "developing methods and models for biological data"
+			},
+			{
+				"title": "independent evaluation of your results"
+			},
+			{
+				"title": "for transcriptomics, picking a right experimental method for your problem"
+			}
+		]
+	}
+]

@@ -1,0 +1,27 @@
+<div class="skills js-skills-accordion">
+
+	{%- for section in skills -%}
+
+		<div class="skills__section">
+			<div class="skills__section-title">{{ section.title }}</div>
+
+			<ul class="skills__list">
+
+				{%- for skill in section.skills -%}
+
+					{% set spoiler = " with-spoiler" %}
+					
+					<li class="skill{% if skill.desc %}{{ spoiler }}{% endif %}">
+						<div class="skill__title">{{ skill.title }}</div>
+						{% if skill.desc %}
+							<div class="skill__desc">{{ skill.desc }}</div>
+						{% endif %}
+					</li>
+				{%- endfor -%}
+
+			</ul>
+		</div>
+
+	{%- endfor -%}
+
+</div>

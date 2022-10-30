@@ -115,3 +115,7 @@
 		display: block;
 	}
 }
+
+@mixin fix-tap() {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}

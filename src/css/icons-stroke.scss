@@ -1,16 +1,6 @@
 @mixin icon-stroke($icon: 'pin', $color: #000, $stroke_width: 1) {
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	&::before {
-		display: block;
-		width: 100%;
-		height: 100%;
-		@include symbol-stroke($icon, $color, $stroke_width);
-		content: '';
-	}
+	@include symbol-stroke($icon, $color, $stroke_width);
 
 }
 
