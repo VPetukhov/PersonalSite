@@ -9,134 +9,27 @@
 		
 		<div class="publications__body">
 
-			<div class="publications__section">
-				<div class="publications__section-title">2022</div>
+			{%- for section in publications -%}
 
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">Reference-based cell type matching of spatial transcriptomics data.</div>
-					<div class="publications__item-desc">Zhang, Y., Miller, J. A., Park, J., Lelieveldt, B. P. F., Aevermann, B. D., Biancalani, T., Comiter, C., Langseth, C. M., Long, B. R., Petukhov, V., Scalia, G., Vaishnav, E. D., Zhao, Y., Lein, E. S., & Scheuermann, R. H. bioRxiv. 2022.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
+				<div class="publications__section">
+					<div class="publications__section-title">{{ section.year }}</div>
+
+					{%- for pub in section.items -%}
+
+						<div class="publications__item">
+							<div class="publications__item-title">{{ pub.title }}</div>
+							<div class="publications__item-desc">{{ pub.desc }}</div>
+							<div class="publications__item-footer">
+								<a class="publications__item-link" href="{{ pub.link }}" target="_blank">link</a>
+								<a class="publications__item-tag" href="#">bibtex</a>
+							</div>
+						</div>
+
+					{%- endfor -%}
+
 				</div>
-				<!-- item -->
 
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">Expression profile of synaptic vesicle glycoprotein 2A, B, and C paralogues in temporal neocortex tissue from patients with temporal lobe epilepsy (TLE).</div>
-					<div class="publications__item-desc">Pazarlar, B. A, Aripaka, S. S., Petukhov, V., Pinborg, L. H., Khodosevich, K., & Mikkelsen, J. D Molecular Brain, 15. 2022.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">Case-control analysis of single-cell RNA-seq studies.</div>
-					<div class="publications__item-desc">Petukhov, V., Igolkina, A. A., Rydbirk, R., Mei, S., Christoffersen, L. B, Khodosevich, K., & Kharchenko, P. V. bioRxiv. 2022.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
-
-			<div class="publications__section">
-				<div class="publications__section-title">2021</div>
-
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">Cell segmentation in imaging-based spatial transcriptomics.</div>
-					<div class="publications__item-desc">Petukhov, V., Xu, R. J, Soldatov, R. A., Cadinu, P., Khodosevich, K., Moffitt, J. R., & Kharchenko, P. V. Nature biotechnology. 2021.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
-
-			<div class="publications__section">
-				<div class="publications__section-title">2020</div>
-
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">Selective vulnerability of supragranular layer neurons in schizophrenia.</div>
-					<div class="publications__item-desc">Batiuk, M. Y., Tyler, T., Mei, S., Rydbirk, R., Petukhov, V., Sedmak, D., Frank, E., Feher, V., Habek, N., Hu, Q., Igolkina, A. A., Roszik, L., Pfisterer, U., Petanjek, Z., Adorjan, I., Kharchenko, P. V., & Khodosevich, K. bioRxiv. 2020.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
-				</div>
-				<!-- item -->
-
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">Identification of epilepsy-associated neuronal subtypes and gene expression underlying epileptogenesis. </div>
-					<div class="publications__item-desc">Pfisterer, U., Petukhov, V., Demharter, S., Meichsner, J., Thompson, J. J, Batiuk, M. Y., Martinez, A. A., Vasistha, N. A., Thakur, A., Mikkelsen, J. D, Adorjan, I., Pinborg, L. H., Pers, T. H., von Engelhardt, J., Kharchenko, P. V., & Khodosevich, K. Nature Communications, 11. 2020.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
-
-			<div class="publications__section">
-				<div class="publications__section-title">2019</div>
-
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">Joint analysis of heterogeneous single-cell RNA-seq dataset collections.</div>
-					<div class="publications__item-desc">Barkas, N., Petukhov, V., Nikolaeva, D. D., Lozinsky, Y., Demharter, S., Khodosevich, K., & Kharchenko, P. V. Nature methods, 16: 695 - 698. 2019.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
-
-			<div class="publications__section">
-				<div class="publications__section-title">2018</div>
-
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">RNA velocity of single cells.</div>
-					<div class="publications__item-desc">Manno, G. L., Soldatov, R. A., Zeisel, A., Braun, E., Hochgerner, H., Petukhov, V., Lidschreiber, K., Kastriti, M. E., Lönnerberg, P., Furlan, A., Fan, J., Borm, L. E., Liu, Z., van Bruggen, D., Guo, J., He, X., Barker, R. A., Sundström, E., Castelo-Branco, G., Cramer, P., Adameyko, I., Linnarsson, S., & Kharchenko, P. V. Nature, 560: 494 - 498. 2018.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
-
-			<div class="publications__section">
-				<div class="publications__section-title">2017</div>
-
-				<!-- item -->
-				<div class="publications__item">
-					<div class="publications__item-title">dropEst: pipeline for accurate estimation of molecular counts in droplet-based single-cell RNA-seq experiments.</div>
-					<div class="publications__item-desc">Petukhov, V., Guo, J., Baryawno, N., Severe, N., Scadden, D. T., Samsonova, M. G., & Kharchenko, P. V. Genome Biology, 19. 2017.</div>
-					<div class="publications__item-footer">
-						<a class="publications__item-link" href="#">link</a>
-						<a class="publications__item-tag" href="#">bibtex</a>
-					</div>
-				</div>
-				<!-- item -->
-
-			</div>
+			{%- endfor -%}
 
 		</div>
 
