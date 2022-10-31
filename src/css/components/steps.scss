@@ -75,16 +75,11 @@
 }
 .step {
 	
-	opacity: .5;
 	@include ease(.2s);
 	margin-bottom: 40px;
 
 	@include media('sm') {
 		margin-bottom: 0;
-	}
-
-	&:hover {
-		opacity: 1;
 	}
 
 	&__number {
