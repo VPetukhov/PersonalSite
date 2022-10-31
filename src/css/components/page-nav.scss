@@ -5,6 +5,7 @@
 	}
 
 	&__title {
+		display: none;
 		margin-bottom: 10px;
 		@include font('w');
 		font-size: 1em;
@@ -15,10 +16,10 @@
 	}
 
 	&__menu {
-		border-top: 1px #fff solid;
-		padding-top: 20px;
+		// border-top: 1px #fff solid;
+		// padding-top: 20px;
 		@include media('lg') {
-			padding-top: 40px;
+			// padding-top: 40px;
 		}
 	}
 
