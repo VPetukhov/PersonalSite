@@ -117,6 +117,7 @@
 		@include rounded(100em);
 		@include ease(.1s);
 		@include icon-stroke('link', #fff, 1px);
+		background-size: 50% 50%;
 		cursor: pointer;
 		@include media('lg') {
 			display: flex;
@@ -134,6 +135,7 @@
 
 	&__contacts-mail-copy.copied {
 		@include icon-stroke('checkmark', #fff, 1px);
+		background-size: 50% 50%;
 	}
 
 	&__links {
