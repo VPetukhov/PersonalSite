@@ -118,10 +118,6 @@
 		box-shadow: 0 40px 100px fade-out($blue, .5);
 	}
 
-	&__layout:hover &__title {
-		color: $blue;
-	}
-
 	&__title {
 		margin-bottom: 20px;
 		@include font('w');
@@ -149,8 +145,9 @@
 		object-fit: contain;
 	}
 
-	&__short-desc {
+	&__short-desc, &__short-long {
 		font-size: .8em;
+		margin-bottom: 20px;
 		@include media('lg') {
 			font-size: 1.2em;
 		}
@@ -158,4 +155,22 @@
 			margin: 0 0 20px 0;
 		}
 	}
+	
+	&__short-long {
+		display: none;
+	}
+
+	&__show-more {
+		font-size: .8em;
+		cursor: pointer;
+		color: $blue;
+		@include ease(.2s);
+		&:hover {
+			color: $pink;
+		}
+		@include media('lg') {
+			font-size: 1.2em;
+		}
+	}
+
 }

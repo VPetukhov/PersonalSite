@@ -7,26 +7,29 @@
 		<div class="relevant-projects__body">
 			<ul class="relevant-projects__list">
 
-				<li class="relevant-projects__list-item relevant-project">
-					<div class="relevant-project__layout">
-						<div class="relevant-project__title">Modularity of neural networks (code)</div>
-						<div class="relevant-project__cover"><img class="relevant-project__cover-img" src="/img/9c7b873aa06d83b4bf6656294eede11e.png" alt=""></div>
-						<div class="relevant-project__short-desc">
-							<p>Short version With a team from AI Safety Camp we worked on enforcing modular structure for neural networks. We developed severaly ways to adjust a loss function to achieve that and demonstrated it on a simple MLP, as well as on a word2vec model.</p>
-							<p>Long version (on click) In my part, I extended and applied the Graph Spectral Regularization method created by Tong, et. al for enforcing arbitrary graph structures. First, it allowed to convert word2vec embedding into a visual field, which could be easily inspected by eyes (similar to how CNNs are analysed). Second, we could train word2vec so the neurons were groupped into five modules, which, supposedly, correspond to high-level features of the texts.</p>
-						</div>
-					</div>
-				</li>
+				{%- for project in relevant_projects -%}
 
-				<li class="relevant-projects__list-item relevant-project">
-					<div class="relevant-project__layout">
-						<div class="relevant-project__title">Visualization of collections of documents</div>
-						<div class="relevant-project__cover"><img class="relevant-project__cover-img" src="/img/265a2764b176dc4cdd133fb0d0e93453.png" alt=""></div>
-						<div class="relevant-project__short-desc">
-							<p>Short version. During my PhD I was looking for information on areas I don’t understand. There, conventional search engines give a very small subset of the information on the topic. It leaves you very little idea of what you miss and even how much missing information is there in total. So, we created a tool for building an overview of large collections of documents.</p>
+					<li class="relevant-projects__list-item relevant-project">
+						<div class="relevant-project__layout">
+							<div class="relevant-project__title">{{ project.title }}</div>
+
+							{% if project.cover %}
+							<div class="relevant-project__cover"><img class="relevant-project__cover-img" src="/img/{{ project.cover }}" alt=""></div>
+							{% endif %}
+
+							{% if project.short %}
+							<div class="relevant-project__short-desc">{{ project.short }}</div>
+							{% endif %}
+							
+							{% if project.long %}
+							<div class="relevant-project__show-more js-relevant-show-more">Show more ↓</div>
+							<div class="relevant-project__short-long">{{ project.long }}</div>
+							{% endif %}
+
 						</div>
-					</div>
-				</li>
+					</li>
+
+				{%- endfor -%}
 
 			</ul>
 		</div>

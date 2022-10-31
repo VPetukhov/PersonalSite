@@ -1,0 +1,13 @@
+[
+	{
+		"title": "Modularity of neural networks (code)",
+		"short": "With a team from AI Safety Camp we worked on enforcing modular structure for neural networks. We developed severaly ways to adjust a loss function to achieve that and demonstrated it on a simple MLP, as well as on a word2vec model.",
+		"long": "In my part, I extended and applied the Graph Spectral Regularization method created by Tong, et. al for enforcing arbitrary graph structures. First, it allowed to convert word2vec embedding into a visual field, which could be easily inspected by eyes (similar to how CNNs are analysed). Second, we could train word2vec so the neurons were groupped into five modules, which, supposedly, correspond to high-level features of the texts.",
+		"cover": "9c7b873aa06d83b4bf6656294eede11e.png"
+	},
+	{
+		"title": "Visualization of collections of documents",
+		"short": "During my PhD I was looking for information on areas I don’t understand. There, conventional search engines give a very small subset of the information on the topic. It leaves you very little idea of what you miss and even how much missing information is there in total. So, we created a tool for building an overview of large collections of documents.",
+		"cover": "265a2764b176dc4cdd133fb0d0e93453.png"
+	}
+]
