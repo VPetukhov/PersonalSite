@@ -98,13 +98,13 @@
 		border: 1px transparent solid;
 		font-size: .8em;
 		white-space: normal;
-		@include rounded(20px);
+		@include rounded(10px);
 		@include media('lg') {
 			padding: 8px 24px;
 			margin: 0 20px 20px 0;
 			font-size: 1.2em;
 			white-space: nowrap;
-			@include rounded(100em);
+			// @include rounded(10em);
 		}
 	}
 	

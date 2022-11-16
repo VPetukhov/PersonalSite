@@ -3071,7 +3071,6 @@ body.popup-menu--active {
 }
 .publications__section {
   margin-bottom: 40px;
-  counter-reset: section
 }
 .publications__section-title {
   margin-bottom: 20px;
@@ -3107,8 +3106,6 @@ body.popup-menu--active {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  counter-increment: section;
-  content: counter(section)
 }
 .publications__item-title {
   margin-bottom: 5px;

@@ -146,18 +146,5 @@
 				}
 			}
 		]
-	},
-	{
-		"title": "Personal",
-		"projects": [
-			{
-				"title": "Linux configs",
-				"link": "https://github.com/VPetukhov/linux_configs"
-			},
-			{
-				"title": "RStudio configs",
-				"link": "https://github.com/VPetukhov/rstudio_config"
-			}
-		]
 	}
 ]

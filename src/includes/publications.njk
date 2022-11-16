@@ -6,7 +6,7 @@
 			<div class="publications__title section__title">My publications</div>
 			<div class="publications__desc section__desc">See <a href="{{ links.scholar.url }}" target="_blank">{{ links.scholar.title }}</a> for more info</div>
 		</div>
-		
+
 		<div class="publications__body">
 
 			{%- for section in publications -%}
@@ -20,8 +20,9 @@
 							<div class="publications__item-title">{{ pub.title }}</div>
 							<div class="publications__item-desc">{{ pub.desc }}</div>
 							<div class="publications__item-footer">
-								<a class="publications__item-link" href="{{ pub.link }}" target="_blank">link</a>
-								<a class="publications__item-tag" href="#">bibtex</a>
+								{# TODO: uncomment it #}
+								{# <a class="publications__item-link" href="{{ pub.link }}" target="_blank">link</a>  #}
+								{# <a class="publications__item-tag" href="#">bibtex</a> #}
 							</div>
 						</div>
 
