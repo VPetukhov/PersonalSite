@@ -22,7 +22,7 @@
 @mixin primary-btn() {
 	display: inline-flex;
 	padding: 16px 40px;
-	color: #fff;
+	color: $white;
 	background: linear-gradient(135deg, $blue 10%, $dark 100%);
 	border: 0;
 	text-decoration: none;
@@ -44,5 +44,37 @@
 		span {
 			border-bottom-color: fade-out(#fff, .5);
 		}
+	}
+}
+
+@mixin tag($size, $size-lg, $margin) {
+	display: inline-flex;
+	
+	font-size: $size;
+
+	list-style: none;
+	margin: 0 $margin $margin 0;
+	padding: .15em .5em;
+	color: $white;
+	background-color: $blue;
+	border: 1px transparent solid;
+	white-space: nowrap;
+
+	@include rounded(10em);
+	@include media('md') {
+		padding: .3em 1em;
+		margin: 0 ($margin * 2) ($margin * 2) 0;
+		font-size: $size-lg;
+	}
+
+	&--light {
+		color: $dark;
+		background-color: #fff;
+	}
+
+	&--dark {
+		color: $white;
+		border-color: #fff;
+		background-color: transparent;
 	}
 }

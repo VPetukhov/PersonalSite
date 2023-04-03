@@ -39,11 +39,7 @@
 
 	&__title {
 		z-index: 1;
-		color: #fff;
-		font-size: 1.4em;
-		@include media('lg') {
-			font-size: 4em;
-		}
+		color: $white;
 	}
 
 }

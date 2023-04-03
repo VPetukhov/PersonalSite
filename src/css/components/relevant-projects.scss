@@ -75,7 +75,7 @@
 	}
 
 	&__title {
-		color: #fff;
+		color: $white;
 	}
 
 	&__list {
@@ -121,7 +121,7 @@
 	&__title {
 		margin-bottom: 20px;
 		@include font('w');
-		font-size: 1.2em;
+		font-size: $text-size-normal-lg;
 		line-height: 1;
 		text-transform: uppercase;
 		letter-spacing: 2px;
@@ -146,10 +146,10 @@
 	}
 
 	&__short-desc, &__short-long {
-		font-size: .8em;
+		font-size: $text-size-small;
 		margin-bottom: 20px;
 		@include media('lg') {
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 		}
 		p {
 			margin: 0 0 20px 0;
@@ -161,7 +161,7 @@
 	}
 
 	&__show-more {
-		font-size: .8em;
+		font-size: $text-size-small;
 		cursor: pointer;
 		color: $blue;
 		@include ease(.2s);
@@ -169,7 +169,7 @@
 			color: $pink;
 		}
 		@include media('lg') {
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 		}
 	}
 

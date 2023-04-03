@@ -1,11 +1,11 @@
 ::selection {
 	background: fade-out($blue, .2);
-	color: #fff;
+	color: $white;
 }
 
 ::-moz-selection {
 	background: fade-out($blue, .2);
-	color: #fff;
+	color: $white;
 }
 
 html {
@@ -59,21 +59,21 @@ h1, h2, h3, h4, h5, h6 {
 	&__title {
 		margin: 0;
 		@include font('w');
-		font-size: 1.4em;
+		font-size: $text-size-subheader;
 		line-height: 1;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		@include media('lg') {
-			font-size: 3em;
+			font-size: $text-size-subheader-lg;
 		}
 	}
 
 	&__desc {
 		width: 100%;
 		margin-top: 20px;
-		font-size: .8em;
+		font-size: $text-size-small;
 		@include media('lg') {
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 		}
 		@include media('lg') {
 			width: 50%;

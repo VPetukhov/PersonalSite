@@ -28,22 +28,22 @@
 	&__category {
 		margin-bottom: 20px;
 		color: $blue;
-		font-size: 1em;
+		font-size: $text-size-normal;
 		@include media('lg') {
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 		}
 	}
 
 	&__title {
 		margin: 0;
-		color: #fff;
+		color: $white;
 		@include font('w');
-		font-size: 2em;
+		font-size: $text-size-header;
 		line-height: 1;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		@include media('lg') {
-			font-size: 4em;
+			font-size: $text-size-header-lg;
 		}
 		span {
 			color: $blue;
@@ -53,12 +53,12 @@
 	&__desc {
 		width: 100%;
 		margin-top: 20px;
-		color: #fff;
-		font-size: 1em;
+		color: $white;
+		font-size: $text-size-normal;
 		line-height: 1.2;
 		@include media('lg') {
 			width: 80%;
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 		}
 	}
 
@@ -90,33 +90,7 @@
 	}
 
 	&__item {
-		margin: 0 5px 5px 0;
-		padding: 4px 10px;
-		list-style: none;
-		color: #fff;
-		background-color: $blue;
-		border: 1px transparent solid;
-		font-size: .8em;
-		white-space: normal;
-		@include rounded(10px);
-		@include media('lg') {
-			padding: 8px 24px;
-			margin: 0 20px 20px 0;
-			font-size: 1.2em;
-			white-space: nowrap;
-			// @include rounded(10em);
-		}
-	}
-	
-	&__item--light {
-		color: $dark;
-		background-color: #fff;
-	}
-
-	&__item--dark {
-		color: #fff;
-		border-color: #fff;
-		background-color: transparent;
+		@include tag($text-size-small, $text-size-normal-lg, 0.5em);
 	}
 
 }

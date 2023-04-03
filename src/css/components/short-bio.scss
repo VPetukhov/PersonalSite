@@ -1,6 +1,6 @@
 .short-bio {
 	z-index: 900;
-	color: #fff;
+	color: $white;
 	padding: 20px 0;
 	@include media('lg') {
 		padding: 100px 0 140px;
@@ -13,10 +13,10 @@
 		width: 100%;
 		margin-bottom: 40px;
 		@include font('r');
-		font-size: 1em;
+		font-size: $text-size-normal;
 		@include media('lg') {
 			width: 70%;
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 
 		}
 	}

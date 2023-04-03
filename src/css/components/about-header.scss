@@ -99,15 +99,15 @@
 	}
 
 	&__content-title {
-		color: #fff;
+		color: $white;
 		@include font('w');
-		font-size: 3em;
+		font-size: $text-size-superheader;
 		line-height: .9;
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		white-space: nowrap;
 		@include media('lg') {
-			font-size: 10em;
+			font-size: $text-size-superheader-lg;
 		}
 	}
 
@@ -123,27 +123,27 @@
 
 	&__content-me {
 		left: 0;
-		color: #fff;
+		color: $white;
 		@include font('w');
-		font-size: 3em;
+		font-size: $text-size-superheader;
 		line-height: .9;
 		text-transform: uppercase;
 		letter-spacing: 5px;
 		white-space: nowrap;
 		@include media('lg') {
 			left: -15px;
-			font-size: 10em;
+			font-size: $text-size-superheader-lg;
 		}
 	}
 
 	&__content-desc {
 		margin-top: 20px;
-		font-size: .8em;
-		color: #fff;
+		font-size: $text-size-small;
+		color: $white;
 		@include media('lg') {
 			margin-top: 0;
 			top: 4px;
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 

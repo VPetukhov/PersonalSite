@@ -8,8 +8,8 @@
 		display: none;
 		margin-bottom: 10px;
 		@include font('w');
-		font-size: 1em;
-		color: #fff;
+		font-size: $text-size-normal;
+		color: $white;
 		@include media('lg') {
 			font-size: 1.6em;
 		}
@@ -45,14 +45,14 @@
 	&__list-link {
 		display: inline-flex;
 		padding: 4px 20px;
-		font-size: .8em;
+		font-size: $text-size-small;
 		@include font('w');
 		border: 1px #fff solid;
 		@include link(#fff, #fff);
 		@include rounded(100em);
 		white-space: nowrap;
 		@include media('lg') {
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 			padding: 10px 30px;
 		}
 	}

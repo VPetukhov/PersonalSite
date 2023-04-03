@@ -43,7 +43,7 @@
 	}
 
 	&__title {
-		color: #fff;
+		color: $white;
 	}
 
 	&__section {
@@ -64,7 +64,7 @@
 		display: inline-flex;
 		color: $blue;
 		@include font('w');
-		font-size: .8em;
+		font-size: $text-size-small;
 		background-color: #fff;
 		border: 1px $blue solid;
 		padding: 4px 20px;
@@ -97,11 +97,11 @@
 	&__item-title {
 		width: 100%;
 		@include font('w');
-		font-size: 1em;
+		font-size: $text-size-normal;
 		@include media('lg') {
 			width: 30%;
 			padding-right: 40px;
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 		}
 	}
 
@@ -116,9 +116,9 @@
 	}
 
 	&__item-summary-desc {
-		font-size: .8em;
+		font-size: $text-size-small;
 		@include media('lg') {
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 
@@ -131,7 +131,7 @@
 		display: inline-flex;
 		margin-top: 10px;
 		padding: 5px 10px;
-		font-size: .8em;
+		font-size: $text-size-small;
 		color: fade-out($dark, .4);
 		border: 1px fade-out($dark, .8) solid;
 		@include rounded(100em);

@@ -35,7 +35,7 @@
 	}
 
 	&__title, &__desc {
-		color: #fff;
+		color: $white;
 	}
 
 	&__header {
@@ -68,7 +68,7 @@
 	}
 
 	&__contacts {
-		color: #fff;
+		color: $white;
 		@include media('lg') {
 			border-left: 1px #fff solid;
 			padding-left: 40px;
@@ -77,10 +77,10 @@
 
 	&__contacts-title {
 		width: 100%;
-		font-size: .8em;
+		font-size: $text-size-small;
 		@include media('lg') {
 			width: 50%;
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 
@@ -94,7 +94,7 @@
 		padding: 5px 20px;
 		@include link(#fff, #fff);
 		border: 1px #fff solid;
-		font-size: 1em;
+		font-size: $text-size-normal;
 		@include rounded(100em);
 		@include media('lg') {
 			padding: 5px 40px;

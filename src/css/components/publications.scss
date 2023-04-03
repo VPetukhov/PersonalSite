@@ -37,7 +37,7 @@
 	}
 
 	&__title, &__desc {
-		color: #fff;
+		color: $white;
 	}
 
 	&__desc a {
@@ -64,11 +64,11 @@
 
 	&__section-title {
 		margin-bottom: 20px;
-		color: #fff;
+		color: $white;
 		@include font('w');
-		font-size: 1.2em;
+		font-size: $text-size-normal-lg;
 		@include media('lg') {
-			font-size: 2em;
+			font-size: $text-size-header;
 		}
 	}
 
@@ -88,7 +88,7 @@
 		@include font('w');
 		font-size: 1.8em;
 		line-height: 1;
-		color: #fff;
+		color: $white;
 		border: 1px fade-out(#fff, .5) solid;
 		@include rounded(100%);
 		counter-increment: section;
@@ -100,19 +100,19 @@
 
 	&__item-title {
 		margin-bottom: 5px;
-		color: #fff;
-		font-size: .8em;
+		color: $white;
+		font-size: $text-size-small;
 		@include font('w');
 		@include media('lg') {
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 
 	&__item-desc {
-		font-size: .8em;
-		color: fade-out(#fff, .5);
+		font-size: $text-size-small;
+		color: fade-out($white, .5);
 		@include media('lg') {
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 
@@ -122,7 +122,7 @@
 
 	&__item-link {
 		display: inline-flex;
-		font-size: .8em;
+		font-size: $text-size-small;
 		@include link(#fff, #fff);
 		background-color: $blue;
 		padding: 6px 16px;
@@ -137,7 +137,7 @@
 
 	&__item-tag {
 		display: inline-flex;
-		font-size: .8em;
+		font-size: $text-size-small;
 		@include link(#fff, #fff);
 		border: 1px #fff solid;
 		padding: 6px 16px;

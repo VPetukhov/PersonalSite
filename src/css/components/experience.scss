@@ -21,14 +21,14 @@
 	}
 
 	&__section--education &__item-position-title {
-		color: #fff;
+		color: $white;
 	}
 
 	&__section-title {
 		display: inline-flex;
-		color: #fff;
+		color: $white;
 		@include font('w');
-		font-size: .8em;
+		font-size: $text-size-small;
 		background-color: $blue;
 		padding: 10px 30px;
 		@include rounded(100em);
@@ -42,7 +42,7 @@
 		display: none;
 		margin: 60px 0 30px 0;
 		padding: 0 60px;
-		color: fade-out(#fff, .7);
+		color: fade-out($white, .7);
 		@include media('lg') {
 			display: flex;
 		}
@@ -95,7 +95,7 @@
 
 	&__item-date {
 		width: 100%;
-		color: #fff;
+		color: $white;
 		margin-bottom: 20px;
 		@include media('lg') {
 			width: 25%;
@@ -105,7 +105,7 @@
 
 	&__item-place {
 		width: 100%;
-		color: #fff;
+		color: $white;
 		margin-bottom: 20px;
 		@include media('lg') {
 			width: 25%;
@@ -115,19 +115,19 @@
 
 	&__item-place-name {
 		padding-right: 40px;
-		font-size: .8em;
+		font-size: $text-size-small;
 		@include media('lg') {
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 
 	&__item-projects {
 		width: 100%;
-		color: #fff;
-		font-size: .8em;
+		color: $white;
+		font-size: $text-size-small;
 		@include media('lg') {
 			width: 25%;
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 		p {
 			margin: 0 0 10px 0;
@@ -145,18 +145,18 @@
 	&__item-position-desc {
 		padding: 0 40px 0 20px;
 		border-left: 2px #fff solid;
-		font-size: .8em;
-		color: #fff;
+		font-size: $text-size-small;
+		color: $white;
 	}
 
 	&__item-date-period {
 		padding: 8px 20px;
 		display: inline-flex;
-		font-size: .7em;
+		font-size: $text-size-small;
 		border: 1px fade-out(#fff, .6) solid;
 		@include rounded(100em);
 		@include media('lg') {
-			font-size: 1em;
+			font-size: $text-size-normal;
 			margin-top: -20px;
 			padding: 8px 20px;
 		}

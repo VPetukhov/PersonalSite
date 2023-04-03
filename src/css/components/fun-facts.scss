@@ -44,9 +44,9 @@
 	}
 	p {
 		margin: 0 0 5px 0;
-		font-size: .8em;
+		font-size: $text-size-small;
 		@include media('lg') {
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 	a {
@@ -112,7 +112,7 @@
 
 	&__title-word {
 		@include font('w');
-		font-size: 4em;
+		font-size: $text-size-superheader;
 		line-height: .8;
 		text-transform: uppercase;
 		letter-spacing: 2px;
@@ -120,7 +120,7 @@
 		z-index: 1;
 		@include media('lg') {
 			position: absolute;
-			font-size: 10em;
+			font-size: $text-size-superheader-lg;
 		}
 		&--first {
 			@include media('lg') {

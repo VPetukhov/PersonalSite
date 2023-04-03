@@ -37,7 +37,7 @@
 	}
 
 	&__title, &__desc {
-		color: #fff;
+		color: $white;
 	}
 
 	&__header {
@@ -87,7 +87,7 @@
 		height: 100px;
 		display: flex;
 		align-items: center;
-		color: #fff;
+		color: $white;
 		@include media('sm') {
 			width: 200px;
 			height: 200px;
@@ -100,7 +100,7 @@
 			height: 80px;
 			border: 1px #fff solid;
 			@include font('w');
-			font-size: 2em;
+			font-size: $text-size-header;
 			@include rounded(100%);
 			@include ease(.2s);
 		}
@@ -119,18 +119,18 @@
 	&__title {
 		margin-bottom: 5px;
 		@include font('w');
-		color: #fff;
+		color: $white;
 		@include media('sm') {
 			margin-bottom: 20px;
 		}
 	}
 
 	&__desc {
-		color: #fff;
-		font-size: .8em;
+		color: $white;
+		font-size: $text-size-small;
 		width: 80%;
 		@include media('sm') {
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 }

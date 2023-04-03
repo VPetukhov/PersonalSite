@@ -31,11 +31,11 @@
 	&__title {
 		margin-bottom: 10px;
 		@include font('w');
-		font-size: 1em;
+		font-size: $text-size-normal;
 		line-height: 1;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		color: #fff;
+		color: $white;
 		@include media('lg') {
 			margin-bottom: 20px;
 			font-size: 1.8em;
@@ -43,10 +43,10 @@
 	}
 
 	&__desc {
-		font-size: .8em;
-		color: fade-out(#fff, .2);
+		font-size: $text-size-small;
+		color: fade-out($white, .2);
 		@include media('lg') {
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 }

@@ -26,20 +26,8 @@
 	}
 
 	&__section-title {
-		display: inline-flex;
-		padding: 8px 24px;
-		color: #fff;
-		background-color: $blue;
-		border: 1px transparent solid;
+		@include tag($text-size-small, $text-size-normal-lg, 0);
 		@include font('w');
-		font-size: .8em;
-		white-space: normal;
-		@include rounded(10px);
-		@include media('lg') {
-			font-size: 1.2em;
-			white-space: nowrap;
-			@include rounded(100em);
-		}
 	}
 	
 }
@@ -93,12 +81,12 @@
 	&__title {
 		padding: 0 60px 0 0;
 		@include font('w');
-		font-size: .8em;
+		font-size: $text-size-small;
 		line-height: 1.2;
 		@include ease(.1s);
-		color: #fff;
+		color: $white;
 		@include media('lg') {
-			font-size: 1.2em;
+			font-size: $text-size-normal-lg;
 		}
 	}
 
@@ -106,13 +94,13 @@
 		display: none;
 		width: 100%;
 		margin-top: 10px;
-		font-size: .8em;
+		font-size: $text-size-small;
 		opacity: .6;
 		overflow: hidden;
-		color: #fff;
+		color: $white;
 		@include media('lg') {
 			width: 90%;
-			font-size: 1em;
+			font-size: $text-size-normal;
 		}
 	}
 
