@@ -10,22 +10,22 @@
 				{%- for project in relevant_projects -%}
 
 					<li class="relevant-projects__list-item relevant-project">
-						<div class="relevant-project__layout">
-							<div class="relevant-project__title">{{ project.title }}</div>
-
+						<div class="relevant-project__card">
+							<div class="relevant-project__card-title">{{ project.title }}</div>
 							{% if project.cover %}
-							<div class="relevant-project__cover"><img class="relevant-project__cover-img" src="/img/{{ project.cover }}" alt=""></div>
+							<div class="relevant-project__card-image">
+								<img src="/img/{{ project.cover }}" alt="">
+							</div>
 							{% endif %}
 
 							{% if project.short %}
-							<div class="relevant-project__short-desc">{{ project.short }}</div>
-							{% endif %}
-							
-							{% if project.long %}
-							<div class="relevant-project__show-more js-relevant-show-more">Show more ↓</div>
-							<div class="relevant-project__short-long">{{ project.long }}</div>
+							<div class="relevant-project__card-text">{{ project.short }}</div>
 							{% endif %}
 
+							{% if project.long %}
+							<div class="relevant-project__show-more js-relevant-show-more">Show more ↓</div>
+							<div class="relevant-project__card-text relevant-project__short-long">{{ project.long }}</div>
+							{% endif %}
 						</div>
 					</li>
 

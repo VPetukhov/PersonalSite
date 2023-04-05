@@ -4,13 +4,19 @@
 @import "breakpoints";
 @import "snippets";
 @import "fonts";
-@import "components";
 @import "icons-stroke";
 @import "icons-fill";
 @import "app";
 
 // Vendors
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+// ui
+
+@import "ui/button";
+@import "ui/link";
+@import "ui/tag";
+@import "ui/card";
 
 // Components
 @import "components/bar";

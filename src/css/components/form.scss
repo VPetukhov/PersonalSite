@@ -33,6 +33,6 @@
 	}
 
 	&__btn {
-		@include primary-btn();
+		@include button();
 	}
 }

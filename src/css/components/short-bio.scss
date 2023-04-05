@@ -22,6 +22,6 @@
 	}
 
 	&__link {
-		@include primary-btn();
+		@include button();
 	}
 }

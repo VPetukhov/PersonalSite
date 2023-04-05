@@ -222,7 +222,7 @@
 	}
 
 	&__item-content a {
-		@include primary-btn();
+		@include button();
 	}
 
 }

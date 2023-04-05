@@ -65,62 +65,20 @@
 
 .project {
 	margin-bottom: 40px;
-	&__link {
-		height: 100%;
-		padding: 30px;
-		margin: 0 20px;
-		display: block;
+
+	&__card {
+		@include card();
+
+		background-color: mix($dark, #fff, 6%);
 		text-decoration: none;
 		@include link($dark, $blue);
-		background-color: mix($dark, #fff, 6%);
-		@include rounded(20px);
-		@include ease(.3s);
-		@include media('lg') {
-			padding: 50px;
+		&:hover {
+			background-color: #fff;
 		}
 	}
 
-	&:hover &__link {
-		background-color: #fff;
-		box-shadow: 40px 40px 100px fade-out($blue, .8), -40px -40px 100px fade-out($pink, .9);
-	}
-
-	&__title {
-		@include font('w');
-		font-size: $text-size-normal-lg;
-		line-height: 1;
-		text-transform: uppercase;
-		@include ease(.2s);
-		@include media('md') {
-			font-size: $text-size-header;
-		}
-	}
-
-	&:hover &__title {
-		color: $blue;
-	}
-
-	&__tags {
-	}
-
-	&__desc {
-		font-size: $text-size-small;
-		@include media('md') {
-			font-size: $text-size-normal;
-		}
-	}
-}
-
-.project-tags {
-	margin: 20px 0;
-	&__list {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0;
-		padding: 0;
-	}
-
-	&__item {
+	&__tag {
 		@include tag(.6em, $text-size-small, .2em);
 	}
 }
+
