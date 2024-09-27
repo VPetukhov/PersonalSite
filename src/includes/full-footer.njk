@@ -4,22 +4,16 @@
 		<div class="request__header section__header">
 			<div class="request__title section__title">Share your contacts to discuss your ideas and needs</div>
 			<div class="request__desc section__desc">If there is no specific request, but you are interested in how machine learning can be useful to you — feel free to write too</div>
+			<div class="request__contacts-mail">
+				<a class="request__contacts-mail-link" href="mailto:{{ metadata.mailto }}" target="_blank">{{ metadata.mailto }}</a>
+				<div class="request__contacts-mail-copy js-clipboard" title="Скопировать почту" data-clipboard-text="{{ metadata.mailto }}"></div>
+			</div>
 		</div>
 		<div class="request__body">
 			<div class="request__summary">
-				<div class="request__contacts">
-					<div class="request__contacts-title">If you need to attach any materials — send your request to e-mail</div>
-					<div class="request__contacts-mail">
-						<a class="request__contacts-mail-link" href="mailto:{{ metadata.mailto }}" target="_blank">{{ metadata.mailto }}</a>
-						<div class="request__contacts-mail-copy js-clipboard" title="Скопировать почту" data-clipboard-text="{{ metadata.mailto }}"></div>
-					</div>
-				</div>
 				<div class="request__links">
 					{% include "links.njk" %}
 				</div>
-			</div>
-			<div class="request__form">
-				{% include "form.njk" %}
 			</div>
 		</div>
 	</div>

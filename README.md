@@ -1,6 +1,7 @@
 To build it run:
 
 ```
+npm install -g gulp-cli
 npm install -g @11ty/eleventy
 npm install
 ```
@@ -8,6 +9,7 @@ npm install
 And then
 
 ```
+gulp build
 npx @11ty/eleventy --serve
 ```
 
