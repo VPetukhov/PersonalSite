@@ -1,8 +1,13 @@
 {
 	"siteTitle": "Viktor Petukhov, PhD",
 	"language": "en",
-	"description": "",
-	"cover_url": "",
-	"url": "https://example.com/",
-	"mailto" : "viktor.petukhov@pm.me"
+	"description": "AI engineer and computational biologist building production LLM systems, research software and full-stack products. PhD, former start-up CTO and independent consultant.",
+	"cover_url": "https://www.vpetukhov.dev/img/portrait.jpg",
+	"url": "https://www.vpetukhov.dev",
+	"mailto": "viktor.petukhov@pm.me",
+	"research": {
+		"citations": "6,800+",
+		"hIndex": 15,
+		"asOf": "November 2026"
+	}
 }

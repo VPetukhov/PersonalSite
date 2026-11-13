@@ -3,15 +3,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description" content="{{ description or metadata.description }}">
+<link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ title or metadata.title }}">
-<meta property="og:site_name" content="{{ title or metadata.title }}">
-<meta property="og:url" content="{{ url or metadata.url }}">
-<meta property="og:image" content="{{ cover or metadata.cover }}">
+<meta property="og:title" content="{% if pageTitle %}{{ pageTitle }} · {% endif %}{{ metadata.siteTitle }}">
+<meta property="og:site_name" content="{{ metadata.siteTitle }}">
+<meta property="og:description" content="{{ description or metadata.description }}">
+<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+<meta property="og:image" content="{{ cover or metadata.cover_url }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ title or metadata.title }}">
+<meta name="twitter:title" content="{% if pageTitle %}{{ pageTitle }} · {% endif %}{{ metadata.siteTitle }}">
 <meta name="twitter:description" content="{{ description or metadata.description }}">
-<meta name="twitter:site" content="{{ title or metadata.title }}">
-<meta name="twitter:image" content="{{ cover or metadata.cover }}">
+<meta name="twitter:image" content="{{ cover or metadata.cover_url }}">

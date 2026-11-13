@@ -1,0 +1,77 @@
+[
+	{
+		"dates": "2011–2015",
+		"sections": [
+			{
+				"image": "4b5967f1abc639d8efe44767ff77adee.png",
+				"paragraphs": [
+					"I studied Applied Mathematics and Computer Science at South Ural State University. Early software roles included game-server development, stock-photo search and document-image processing.",
+					"Looking for useful applications of mathematics led me towards computational biology."
+				]
+			}
+		]
+	},
+	{
+		"dates": "2015–2017",
+		"sections": [
+			{
+				"image": "b5067a2574654ab68021f172f4fa579d.png",
+				"paragraphs": [
+					"During my master’s at St. Petersburg Polytechnic University, I studied machine learning and statistics at the Computer Science Center and worked on pharmaceutical and genomics algorithms at EPAM Systems.",
+					"Research with Peter Kharchenko’s lab at Harvard Medical School led to dropEst, a pipeline for accurate molecule counting in single-cell RNA sequencing."
+				]
+			}
+		]
+	},
+	{
+		"dates": "2018–2021",
+		"sections": [
+			{
+				"image": "4075bec8291c3bd66ed6b3a832622f31.jpg",
+				"paragraphs": [
+					"I led data-science projects at Cleverbots in 2018–2019, working on forecasting, recommendations and production-process modelling.",
+					"From 2019 to 2021, I completed a PhD in Biostatistics and Bioinformatics at the University of Copenhagen with Konstantin Khodosevich and Peter Kharchenko, combining work with experimental biologists and computational researchers at Harvard Medical School."
+				]
+			}
+		]
+	},
+	{
+		"dates": "2021–2024",
+		"sections": [
+			{
+				"image": "Mask-group.png",
+				"paragraphs": [
+					"I began independent AI and biotech consulting in September 2021. Through SEADS, I worked with non-profits on speech recognition, survey analysis and impact evaluation.",
+					"As CTO of Tentakel from 2022 to 2024, I hired and managed three developers and built LLM applications for querying business data and document collections."
+				]
+			}
+		]
+	},
+	{
+		"dates": "2022–2025",
+		"sections": [
+			{
+				"paragraphs": [
+					"At Altos Labs, I analysed single-cell and spatial data for cell-therapy development and benchmarked the effects of cell-segmentation errors. This work led to a co-first-author Nature Genetics paper in 2026.",
+					"Alongside consulting, I continued developing research software and received the SIB Bioinformatics Award’s PhD Paper Award in 2023."
+				]
+			}
+		]
+	},
+	{
+		"dates": "2025–2026",
+		"sections": [
+			{
+				"paragraphs": [
+					"I founded and built LabMap, a search engine and map of academic labs, handling the product from LLM data pipelines to its interface and promotion.",
+					"In 2026, I led production AI work for a German industrial manufacturer, building document workflows, board-meeting intelligence and multilingual news monitoring. I also explored a bio-waste venture through the Fifty Years 5050 accelerator and fieldwork in Ghana; that venture is paused.",
+					"Today my work brings together AI engineering, scientific methods and product development."
+				]
+			},
+			{
+				"link": "/career/",
+				"linkTitle": "See my full career and research record"
+			}
+		]
+	}
+]

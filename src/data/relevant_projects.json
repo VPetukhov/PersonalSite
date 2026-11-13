@@ -1,13 +1,28 @@
 [
 	{
-		"title": "Modularity of neural networks (code)",
-		"short": "With a team from AI Safety Camp we worked on enforcing modular structure for neural networks. We developed severaly ways to adjust a loss function to achieve that and demonstrated it on a simple MLP, as well as on a word2vec model.",
-		"long": "In my part, I extended and applied the Graph Spectral Regularization method created by Tong, et. al for enforcing arbitrary graph structures. First, it allowed to convert word2vec embedding into a visual field, which could be easily inspected by eyes (similar to how CNNs are analysed). Second, we could train word2vec so the neurons were groupped into five modules, which, supposedly, correspond to high-level features of the texts.",
-		"cover": "9c7b873aa06d83b4bf6656294eede11e.png"
+		"title": "Article Visual Search",
+		"short": "I independently built an interactive map of scientific literature from PubMed and Semantic Scholar, combining embeddings and clustering with optional LLM-generated cluster summaries. Developed intermittently from May 2023 to March 2026, it follows my earlier work on mapping document collections.",
+		"link": "https://multicore-cafe.github.io/visual-search/",
+		"linkTitle": "Explore the application"
 	},
 	{
-		"title": "Visualization of collections of documents",
-		"short": "During my PhD I was looking for information on areas I don’t understand. There, conventional search engines give a very small subset of the information on the topic. It leaves you very little idea of what you miss and even how much missing information is there in total. So, we created a tool for building an overview of large collections of documents.",
-		"cover": "265a2764b176dc4cdd133fb0d0e93453.png"
+		"title": "Baysor & spatial transcriptomics",
+		"short": "As lead author and maintainer of Baysor, I develop Bayesian cell-segmentation methods and reproducible research software. My related work with Altos Labs examined how segmentation errors affect spatial analysis, leading to a co-first-author Nature Genetics paper in 2026.",
+		"link": "https://github.com/kharchenkolab/Baysor",
+		"linkTitle": "Code and documentation"
+	},
+	{
+		"title": "GPTCellAnnotator",
+		"short": "Built an LLM-assisted workflow for single-cell cluster annotation in 2023–2024. GPT proposes candidate cell types and markers; Scanpy identifies cluster markers, and GPT assigns labels from that evidence.",
+		"link": "https://github.com/VPetukhov/GPTCellAnnotator",
+		"linkTitle": "View the code"
+	},
+	{
+		"title": "Modular neural networks",
+		"short": "With an AI Safety Camp team, explored loss-function regularisation to encourage modular structure in neural networks, demonstrating the approach on an MLP and word2vec.",
+		"long": "I extended Graph Spectral Regularization to impose arbitrary target graph structures and used it to organise word2vec neurons into five modules, enabling visual inspection of the resulting embeddings.",
+		"cover": "9c7b873aa06d83b4bf6656294eede11e.png",
+		"link": "https://github.com/VPetukhov/GraphRegularizedNNs",
+		"linkTitle": "View the code"
 	}
 ]

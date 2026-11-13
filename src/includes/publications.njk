@@ -1,10 +1,10 @@
-<a class="js-scroll-publications"></a>
+<a id="publications" class="js-scroll-publications"></a>
 <div class="publications">
 	<div class="publications__layout">
 		<div class="publications__stain publications__stain--top"></div>
 		<div class="publications__header">
 			<div class="publications__title section__title">My publications</div>
-			<div class="publications__desc section__desc">See <a href="{{ links.scholar.url }}" target="_blank">{{ links.scholar.title }}</a> for more info</div>
+			<div class="publications__desc section__desc">{{ metadata.research.citations }} citations · h-index {{ metadata.research.hIndex }} · {{ metadata.research.asOf }}. See <a href="{{ links.scholar.url }}" target="_blank" rel="noopener noreferrer">Google Scholar</a> for the full record. Preprints are labelled below.</div>
 		</div>
 
 		<div class="publications__body">
@@ -20,9 +20,7 @@
 							<div class="publications__item-title">{{ pub.title }}</div>
 							<div class="publications__item-desc">{{ pub.desc }}</div>
 							<div class="publications__item-footer">
-								{# TODO: uncomment it #}
-								{# <a class="publications__item-link" href="{{ pub.link }}" target="_blank">link</a>  #}
-								{# <a class="publications__item-tag" href="#">bibtex</a> #}
+								<a class="publications__item-link" href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.pub }}</a>
 							</div>
 						</div>
 

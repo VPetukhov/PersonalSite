@@ -1,39 +1,74 @@
 [
 	{
-		"year" : "2022",
+		"year": "2026",
 		"items": [
 			{
-				"title": "Reference-based cell type matching of spatial transcriptomics data.",
-				"desc": "Zhang, Y., Miller, J. A., Park, J., Lelieveldt, B. P. F., Aevermann, B. D., Biancalani, T., Comiter, C., Langseth, C. M., Long, B. R., Petukhov, V., Scalia, G., Vaishnav, E. D., Zhao, Y., Lein, E. S., & Scheuermann, R. H.",
-				"pub": "bioRxiv, 2022.",
-				"link": "https://bibbase.org/network/publication/zhang-miller-park-lelieveldt-aevermann-biancalani-comiter-langseth-etal-referencebasedcelltypematchingofspatialtranscriptomicsdata-2022",
-				"bibtex" : ""
-			},
-			{
-				"title": "Expression profile of synaptic vesicle glycoprotein 2A, B, and C paralogues in temporal neocortex tissue from patients with temporal lobe epilepsy (TLE).",
-				"desc": "Pazarlar, B. A, Aripaka, S. S., Petukhov, V., Pinborg, L. H., Khodosevich, K., & Mikkelsen, J. D",
-				"pub": "Molecular Brain, 15. 2022.",
-				"link": "https://bibbase.org/network/publication/pazarlar-aripaka-petukhov-pinborg-khodosevich-mikkelsen-expressionprofileofsynapticvesicleglycoprotein2abandcparaloguesintemporalneocortextissuefrompatientswithtemporallobeepilepsytle-2022",
-				"bibtex" : ""
-			},
-			{
-				"title": "Case-control analysis of single-cell RNA-seq studies.",
-				"desc": "Petukhov, V., Igolkina, A. A., Rydbirk, R., Mei, S., Christoffersen, L. B, Khodosevich, K., & Kharchenko, P. V.",
-				"pub": "bioRxiv. 2022.",
-				"link": "https://bibbase.org/network/publication/petukhov-igolkina-rydbirk-mei-christoffersen-khodosevich-kharchenko-casecontrolanalysisofsinglecellrnaseqstudies-2022",
-				"bibtex" : ""
+				"title": "Impact and correction of segmentation errors in spatial transcriptomics",
+				"desc": "Mitchel, J., Gao, T., Petukhov, V. (co-first author), Cole, E., & Kharchenko, P. V.",
+				"pub": "Nature Genetics, 2026.",
+				"link": "https://doi.org/10.1038/s41588-025-02497-4"
 			}
 		]
 	},
 	{
-		"year": "2021",
+		"year": "2025",
 		"items": [
 			{
-				"title": "Cell segmentation in imaging-based spatial transcriptomics.",
-				"desc": "Petukhov, V., Xu, R. J, Soldatov, R. A., Cadinu, P., Khodosevich, K., Moffitt, J. R., & Kharchenko, P. V.",
-				"pub": "Nature biotechnology. 2021.",
-				"link": "https://bibbase.org/network/publication/petukhov-xu-soldatov-cadinu-khodosevich-moffitt-kharchenko-cellsegmentationinimagingbasedspatialtranscriptomics-2021",
-				"bibtex" : ""
+				"title": "Single-cell atlas uncovers layer 4 heterogeneity and functional gradients in rhesus macaque visual cortex",
+				"desc": "Günther et al.; co-author.",
+				"pub": "bioRxiv preprint, 2025 · Google Scholar",
+				"link": "https://scholar.google.com/citations?user=rkEysdsAAAAJ"
+			}
+		]
+	},
+	{
+		"year": "2024",
+		"items": [
+			{
+				"title": "Gene panel selection for targeted spatial transcriptomics",
+				"desc": "Zhang, Y., Petukhov, V., Biederstedt, E., Que, R., Zhang, K., & Kharchenko, P. V.",
+				"pub": "Genome Biology, 25, 35 (2024).",
+				"link": "https://doi.org/10.1186/s13059-024-03174-1"
+			}
+		]
+	},
+	{
+		"year": "2023",
+		"items": [
+			{
+				"title": "Reference-based cell type matching of in situ image-based spatial transcriptomics data on primary visual cortex of mouse brain",
+				"desc": "Zhang, Y., Miller, J. A., Park, J., Lelieveldt, B. P., Long, B., Abdelaal, T., … Petukhov, V., …",
+				"pub": "Scientific Reports, 13, 9567 (2023).",
+				"link": "https://doi.org/10.1038/s41598-023-36638-8"
+			}
+		]
+	},
+	{
+		"year": "2022",
+		"items": [
+			{
+				"title": "Cell segmentation in imaging-based spatial transcriptomics",
+				"desc": "Petukhov, V., Xu, R. J., Soldatov, R. A., Cadinu, P., Khodosevich, K., Moffitt, J. R., & Kharchenko, P. V.",
+				"pub": "Nature Biotechnology, 40, 345–354 (2022).",
+				"link": "https://doi.org/10.1038/s41587-021-01044-w"
+			},
+			{
+				"title": "Upper cortical layer–driven network impairment in schizophrenia",
+				"desc": "Batiuk, M. Y., Tyler, T., Dragicevic, K., Mei, S., Rydbirk, R., Petukhov, V., … Khodosevich, K.",
+				"pub": "Science Advances, 8(41), eabn8367 (2022).",
+				"link": "https://doi.org/10.1126/sciadv.abn8367"
+			},
+			{
+				"title": "Expression profile of synaptic vesicle glycoprotein 2A, B, and C paralogues in temporal neocortex tissue from patients with temporal lobe epilepsy",
+				"desc": "Pazarlar, B. A., Aripaka, S. S., Petukhov, V., Pinborg, L., Khodosevich, K., …",
+				"pub": "Molecular Brain, 15, 45 (2022).",
+				"link": "https://doi.org/10.1186/s13041-022-00931-w"
+			},
+			{
+				"title": "Case-control analysis of single-cell RNA-seq studies",
+				"desc": "Petukhov, V., Igolkina, A. A., Rydbirk, R., Mei, S., Christoffersen, L. B., Khodosevich, K., & Kharchenko, P. V.",
+				"pub": "bioRxiv preprint, 2022.",
+				"link": "https://doi.org/10.1101/2022.03.15.484475"
 			}
 		]
 	},
@@ -41,18 +76,10 @@
 		"year": "2020",
 		"items": [
 			{
-				"title": "Selective vulnerability of supragranular layer neurons in schizophrenia.",
-				"desc": "Batiuk, M. Y., Tyler, T., Mei, S., Rydbirk, R., Petukhov, V., Sedmak, D., Frank, E., Feher, V., Habek, N., Hu, Q., Igolkina, A. A., Roszik, L., Pfisterer, U., Petanjek, Z., Adorjan, I., Kharchenko, P. V., & Khodosevich, K.",
-				"pub": "bioRxiv. 2020.",
-				"link": "https://bibbase.org/network/publication/batiuk-tyler-mei-rydbirk-petukhov-sedmak-frank-feher-etal-selectivevulnerabilityofsupragranularlayerneuronsinschizophrenia-2020",
-				"bibtex" : ""
-			},
-			{
-				"title": "Identification of epilepsy-associated neuronal subtypes and gene expression underlying epileptogenesis.",
-				"desc": "Pfisterer, U., Petukhov, V., Demharter, S., Meichsner, J., Thompson, J. J, Batiuk, M. Y., Martinez, A. A., Vasistha, N. A., Thakur, A., Mikkelsen, J. D, Adorjan, I., Pinborg, L. H., Pers, T. H., von Engelhardt, J., Kharchenko, P. V., & Khodosevich, K.",
-				"pub": "Nature Communications, 11. 2020.",
-				"link": "https://bibbase.org/network/publication/pfisterer-petukhov-demharter-meichsner-thompson-batiuk-martinez-vasistha-etal-identificationofepilepsyassociatedneuronalsubtypesandgeneexpressionunderlyingepileptogenesis-2020",
-				"bibtex" : ""
+				"title": "Identification of epilepsy-associated neuronal subtypes and gene expression underlying epileptogenesis",
+				"desc": "Pfisterer, U.*, Petukhov, V.*, Demharter, S.*, Meichsner, J.*, Thompson, J. J., Batiuk, M. Y., … Khodosevich, K. (* equal contribution)",
+				"pub": "Nature Communications, 11, 5038 (2020).",
+				"link": "https://doi.org/10.1038/s41467-020-18752-7"
 			}
 		]
 	},
@@ -60,11 +87,10 @@
 		"year": "2019",
 		"items": [
 			{
-				"title": "Joint analysis of heterogeneous single-cell RNA-seq dataset collections.",
-				"desc": "Barkas, N., Petukhov, V., Nikolaeva, D. D., Lozinsky, Y., Demharter, S., Khodosevich, K., & Kharchenko, P. V.",
-				"pub": "Nature methods, 16: 695 - 698. 2019.",
-				"link": "https://bibbase.org/network/publication/barkas-petukhov-nikolaeva-lozinsky-demharter-khodosevich-kharchenko-jointanalysisofheterogeneoussinglecellrnaseqdatasetcollections-2019",
-				"bibtex" : ""
+				"title": "Joint analysis of heterogeneous single-cell RNA-seq dataset collections",
+				"desc": "Barkas, N.*, Petukhov, V.*, Nikolaeva, D., Lozinsky, Ya., Demharter, S., Khodosevich, K., & Kharchenko, P. V. (* equal contribution)",
+				"pub": "Nature Methods, 16, 695–698 (2019).",
+				"link": "https://doi.org/10.1038/s41592-019-0466-z"
 			}
 		]
 	},
@@ -72,23 +98,16 @@
 		"year": "2018",
 		"items": [
 			{
-				"title": "RNA velocity of single cells.",
-				"desc": "Manno, G. L., Soldatov, R. A., Zeisel, A., Braun, E., Hochgerner, H., Petukhov, V., Lidschreiber, K., Kastriti, M. E., Lönnerberg, P., Furlan, A., Fan, J., Borm, L. E., Liu, Z., van Bruggen, D., Guo, J., He, X., Barker, R. A., Sundström, E., Castelo-Branco, G., Cramer, P., Adameyko, I., Linnarsson, S., & Kharchenko, P. V.",
-				"pub": "Nature, 560: 494 - 498. 2018.",
-				"link": "https://bibbase.org/network/publication/manno-soldatov-zeisel-braun-hochgerner-petukhov-lidschreiber-kastriti-etal-rnavelocityofsinglecells-2018",
-				"bibtex" : ""
-			}
-		]
-	},
-	{
-		"year": "2017",
-		"items": [
+				"title": "RNA velocity of single cells",
+				"desc": "La Manno, G., Soldatov, R., Zeisel, A., Braun, E., Hochgerner, H., Petukhov, V., … Kharchenko, P. V.",
+				"pub": "Nature, 560, 494–498 (2018).",
+				"link": "https://doi.org/10.1038/s41586-018-0414-6"
+			},
 			{
-				"title": "dropEst: pipeline for accurate estimation of molecular counts in droplet-based single-cell RNA-seq experiments.",
+				"title": "dropEst: pipeline for accurate estimation of molecular counts in droplet-based single-cell RNA-seq experiments",
 				"desc": "Petukhov, V., Guo, J., Baryawno, N., Severe, N., Scadden, D. T., Samsonova, M. G., & Kharchenko, P. V.",
-				"pub": "Genome Biology, 19. 2017.",
-				"link": "https://bibbase.org/network/publication/petukhov-guo-baryawno-severe-scadden-samsonova-kharchenko-dropestpipelineforaccurateestimationofmolecularcountsindropletbasedsinglecellrnaseqexperiments-2017",
-				"bibtex" : ""
+				"pub": "Genome Biology, 19, 78 (2018).",
+				"link": "https://doi.org/10.1186/s13059-018-1449-6"
 			}
 		]
 	}

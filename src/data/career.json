@@ -1,0 +1,198 @@
+[
+	{
+		"id": "experience",
+		"title": "Work experience",
+		"type": "work",
+		"positionLabel": "Role",
+		"placeLabel": "Organisation / setting",
+		"items": [
+			{
+				"title": "Independent AI & Biotech Consultant",
+				"subtitle": "Scoping, architecture and implementation",
+				"dates": "09/2021 → present",
+				"place": "Remote · companies and non-profits",
+				"details": [
+					"Selected engagements are listed below. Work spans production AI, scientific computing and technical strategy.",
+					"Viaduct.ai: developed an interpretable truck-failure detection algorithm. Phystech Ventures: technical due diligence of biotech ML methods. Drone Solutions: computer-vision department strategy supporting a $300,000 fundraise."
+				]
+			},
+			{
+				"id": "industrial-ai",
+				"title": "Lead AI Engineer & Architect",
+				"subtitle": "Production LLM systems · via a consultancy · under NDA",
+				"dates": "05/2026 → 09/2026",
+				"place": "German nuclear-industry manufacturer",
+				"details": [
+					"Led architecture and most implementation of multilingual production AI systems, then hired a small engineering team. All data storage and AI processing remained in the EU.",
+					"Board intelligence: SharePoint documents and recordings become source-checked agenda briefs, decision timelines, follow-up tracking and cited Q&A with hybrid search.",
+					"News intelligence: took over an early prototype and developed it with a hired engineer. Nightly monitoring in 16 languages, event deduplication, source ratings, executive briefs, cited chat and a risk register linked to evidence.",
+					"Document automation: translated scanned technical drawings while preserving stamps and signatures; generated manufacturing certificates from 1C ERP data. Delivered workflows through Teams with SharePoint / OneDrive sync.",
+					"Python, FastAPI, Pydantic AI, LiteLLM, PostgreSQL / pgvector, React, TypeScript, Microsoft Graph / Entra ID, Docker, GCP and Azure."
+				]
+			},
+			{
+				"id": "altos-labs",
+				"title": "Contractor — Altos Labs",
+				"subtitle": "Single-cell and spatial genomics for cell therapy",
+				"dates": "12/2022 → 04/2025",
+				"place": "Remote",
+				"details": [
+					"Analysed scRNA-seq and 10x Xenium data for cell-therapy development; developed quality-control metrics for spatial transcriptomics.",
+					"Built benchmarks quantifying the impact of cell-segmentation errors. Co-first author of the resulting Nature Genetics paper (2026)."
+				]
+			},
+			{
+				"id": "car-t",
+				"title": "Consultant — Stealth Biotech Start-up",
+				"subtitle": "CAR-T cell-therapy development",
+				"dates": "05/2023 → 11/2023",
+				"place": "Client not named",
+				"details": [
+					"Built automated scRNA-seq, CITE-seq, TCR/BCR-seq and ATAC-seq analysis pipelines and wrote analysis and interpretation guidelines.",
+					"Python, R, Snakemake, Scanpy and Seurat."
+				]
+			},
+			{
+				"title": "Team Lead, Data Science — Cleverbots",
+				"subtitle": "Data-science consulting",
+				"dates": "05/2018 → 10/2019",
+				"place": "Moscow / remote",
+				"details": [
+					"Built matchmaking and event recommendations deployed at a week-long event with 1,000+ participants.",
+					"Built a market-share prediction model and managed developers on a churn-prediction project.",
+					"Bayesian sales forecasting, personalised pharmacy offers, and factory-process modelling and optimisation."
+				]
+			},
+			{
+				"title": "Algorithm Developer — EPAM Systems",
+				"subtitle": "Pharmaceutical and genomics algorithms",
+				"dates": "09/2015 → 04/2017",
+				"place": "St. Petersburg, Russia",
+				"details": [
+					"OpGen: de novo genome assembly and structural-variant detection from optical maps (Perl, Python, C++).",
+					"Novartis: extended dose–response curve fitting with additional curve parameters (Java, R).",
+					"Merck: reimplemented drug-effect trend analysis for a new experiment-management system (SAS, R)."
+				]
+			}
+		]
+	},
+	{
+		"id": "ventures",
+		"title": "Products & ventures",
+		"type": "work",
+		"positionLabel": "Role / project",
+		"placeLabel": "Focus / setting",
+		"items": [
+			{
+				"id": "bio-waste",
+				"title": "Co-founder — Bio-waste Venture",
+				"subtitle": "Paused",
+				"dates": "2026",
+				"place": "Fifty Years 5050 accelerator · London / West Africa",
+				"details": [
+					"Assessed biological processing of fish waste into fertiliser and feed ingredients, researched markets and buyers, and conducted stakeholder interviews in Ghana.",
+					"Paused after the accelerator when fish waste proved to have a cheap existing outlet as pig feed."
+				]
+			},
+			{
+				"id": "labmap",
+				"title": "Solo Founder — LabMap",
+				"subtitle": "Search engine and map of academic labs",
+				"dates": "04/2025 → 02/2026",
+				"place": "Remote",
+				"details": [
+					"Built the full product: LLM-based data collection and annotation, search, interactive map, backend and web interface. Ran promotion and tracked user feedback.",
+					"Python, TypeScript, Next.js, React, Gemini, OpenAI API, LiteLLM, OpenAlex, BigQuery, Meilisearch / Typesense and GCP."
+				]
+			},
+			{
+				"id": "cell-perturbation",
+				"title": "Co-founder — Cell-perturbation Start-up",
+				"subtitle": "Cancelled",
+				"dates": "04/2024 → 05/2025",
+				"place": "Biotech",
+				"details": [
+					"Conducted market analysis, developed strategy and built technical prototypes for predicting cellular responses to perturbations.",
+					"Cancelled after assessing model performance and the competitive landscape."
+				]
+			},
+			{
+				"id": "tentakel",
+				"title": "CTO — Tentakel",
+				"subtitle": "LLM applications for businesses",
+				"dates": "12/2022 → 02/2024",
+				"place": "Tbilisi, Georgia",
+				"details": [
+					"Hired and managed three developers. Built a natural-language-to-SQL and visualisation MVP and a RAG product over gigabytes of documents.",
+					"Defined technical strategy and product requirements with clients; contributed to market research, business-model analysis and fundraising."
+				]
+			},
+			{
+				"id": "seads",
+				"title": "Co-founder & Data Scientist — SEADS",
+				"subtitle": "Data-science consulting for non-profits",
+				"dates": "2022 → 2023",
+				"place": "Remote",
+				"details": [
+					"Family Empowerment Media: Hausa interview transcription and analysis, ASR benchmarking, Whisper / XLS-R fine-tuning and publication of the BibleTTS Hausa dataset.",
+					"Centre for Effective Altruism: conference survey analysis. TalkItOver: chatbot impact and conversation analysis. Fish Welfare Initiative: water-quality analysis.",
+					"Additional work included charity-choice research, EA Forum analytics, influencer networks and alternative-protein job-market analysis for Talist."
+				]
+			}
+		]
+	},
+	{
+		"id": "education",
+		"title": "Education",
+		"type": "education",
+		"positionLabel": "Degree / training",
+		"placeLabel": "Institution",
+		"items": [
+			{
+				"title": "PhD, Biostatistics and Bioinformatics",
+				"dates": "06/2019 → 12/2021",
+				"place": "University of Copenhagen · research at Harvard Medical School",
+				"details": [
+					"Thesis: Case-control analysis of single-cell RNA-seq studies.",
+					"Supervisors: Konstantin Khodosevich (University of Copenhagen) and Peter Kharchenko (Harvard Medical School)."
+				]
+			},
+			{
+				"title": "Master, Applied Informatics and Computer Science",
+				"dates": "09/2015 → 06/2017",
+				"place": "St. Petersburg Polytechnic University",
+				"details": [
+					"Thesis: Accurate estimation of molecular counts in droplet-based single-cell RNA-seq experiments.",
+					"Additional study: Computer Science Center, Data Analysis track; HST Summer Institute, Harvard Medical School (2016)."
+				]
+			},
+			{
+				"title": "Bachelor, Applied Mathematics and Computer Science",
+				"dates": "09/2011 → 06/2015",
+				"place": "South Ural State University",
+				"details": ["Thesis: Fast deskewing of text document images."]
+			},
+			{
+				"title": "Product Management and Product Strategy",
+				"dates": "09/2025 → 12/2025",
+				"place": "Master Strategy",
+				"details": ["Additional training in product management and product strategy."]
+			}
+		]
+	},
+	{
+		"id": "awards",
+		"title": "Awards",
+		"type": "education",
+		"positionLabel": "Award",
+		"placeLabel": "Organisation",
+		"items": [
+			{
+				"title": "SIB Bioinformatics Award — PhD Paper Award",
+				"dates": "2023",
+				"place": "Swiss Institute of Bioinformatics",
+				"details": []
+			}
+		]
+	}
+]

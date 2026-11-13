@@ -1,26 +1,90 @@
 [
 	{
-		"title": "Viaduct",
-		"desc": "R&D, developing of a novel algorithm for interpretable detection of truck failures.",
-		"tags": ["R&D", "interpretability"],
-		"link": "https://www.viaduct.ai/"
+		"id": "board-intelligence",
+		"title": "Board intelligence",
+		"desc": "Built a production platform that turns meeting documents and recordings into source-checked briefs, decision timelines and cited Q&A. Led architecture and implementation, with all AI processing kept in the EU.",
+		"tags": [
+			"Production AI",
+			"RAG",
+			"2026"
+		],
+		"link": "/career/#industrial-ai"
 	},
 	{
-		"title": "Talist",
-		"desc": "Analyzed thousands of job ads within the alternative protein industry, which provided major improvements for business strategy of the HR agency working within it.",
-		"tags": ["strategy", "NLP", "scrapping", "analytics"],
-		"link": "https://www.linkedin.com/company/talist-recruitment/"
+		"id": "news-intelligence",
+		"title": "Multilingual news intelligence",
+		"desc": "Took over an early prototype and developed it with a hired engineer. The portal gathers news in 16 languages, merges coverage of the same event and produces executive briefs, cited answers and a risk register linked to evidence.",
+		"tags": [
+			"LLM workflows",
+			"Search",
+			"2026"
+		],
+		"link": "/career/#industrial-ai"
 	},
 	{
-		"title": "Drone solutions",
-		"desc": "Created a strategy for creating a computer vision department in a drone-producing start-up. It helped to raise >$300k funding and the department was successfully created.",
-		"tags": ["strategy", "fundraising", "CV"],
-		"link": "https://dronesolutions.ru/"
+		"id": "labmap",
+		"title": "LabMap",
+		"desc": "Founded and built a search engine and interactive map of academic labs worldwide. Delivered the full product, from LLM-based data collection and annotation to search, backend and interface; ran promotion and gathered user feedback.",
+		"tags": [
+			"Solo founder",
+			"Full-stack",
+			"2025–2026"
+		],
+		"link": "https://labmap.org"
 	},
 	{
-		"title": "Phystech ventures",
-		"desc": "Evaluated machine learning methods of biotech companies, which applied for funding.",
-		"tags": ["fundraising", "bio"],
-		"link": "https://phystech.vc/"
+		"id": "baysor",
+		"title": "Baysor",
+		"desc": "Lead author and maintainer of Bayesian cell-segmentation software used by labs worldwide. Led the 2026 C++ release: benchmarks showed 2–3× faster segmentation and 10–40% less memory than cpp-0.8.3. Published in Nature Biotechnology.",
+		"tags": [
+			"Bayesian methods",
+			"C++ / Julia",
+			"Open source"
+		],
+		"link": "https://github.com/kharchenkolab/Baysor"
+	},
+	{
+		"id": "altos-labs",
+		"title": "Altos Labs",
+		"desc": "Analysed single-cell and spatial data for cell-therapy development. Built quality-control metrics and benchmarks measuring the effects of segmentation errors; co-first author of the resulting Nature Genetics paper in 2026.",
+		"tags": [
+			"Spatial genomics",
+			"Cell therapy",
+			"2022–2025"
+		],
+		"link": "https://doi.org/10.1038/s41588-025-02497-4"
+	},
+	{
+		"id": "article-visual-search",
+		"title": "Article Visual Search",
+		"desc": "Independently built an application for exploring PubMed and Semantic Scholar literature on an interactive map. Combines embeddings, clustering and optional LLM-generated cluster names and summaries. Developed intermittently during 2023–2026.",
+		"tags": [
+			"Sole developer",
+			"NLP",
+			"Open source"
+		],
+		"link": "https://multicore-cafe.github.io/visual-search/"
+	},
+	{
+		"id": "tentakel",
+		"title": "Tentakel",
+		"desc": "As CTO, hired and managed three developers building LLM applications for businesses. Built a natural-language-to-SQL and visualisation MVP and a RAG product over gigabytes of documents; defined requirements directly with clients.",
+		"tags": [
+			"Technical leadership",
+			"LLM products",
+			"2022–2024"
+		],
+		"link": "/career/#tentakel"
+	},
+	{
+		"id": "hausa-speech-recognition",
+		"title": "Hausa speech recognition",
+		"desc": "Built transcription and interview-analysis workflows for Family Empowerment Media through SEADS. Benchmarked Hausa speech-recognition models, fine-tuned Whisper and XLS-R, and published the BibleTTS Hausa dataset on Hugging Face.",
+		"tags": [
+			"Speech / NLP",
+			"Non-profit",
+			"2022–2023"
+		],
+		"link": "https://github.com/seads-org/hausa-speech-recognition"
 	}
 ]

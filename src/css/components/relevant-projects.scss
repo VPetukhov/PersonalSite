@@ -84,9 +84,6 @@
 		flex-wrap: wrap;
 		margin: 0 -20px;
 		padding: 0;
-		@include media('lg') {
-			flex-wrap: nowrap;
-		}
 	}
 
 	&__list-item {
@@ -95,14 +92,17 @@
 .relevant-project {
 	width: 100%;
 	list-style: none;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	@include media('lg') {
 		width: 50%;
-		margin-bottom: 0;
 	}
 
 	&__card {
 		@include card($text-lg: $text-size-normal-lg);
+	}
+
+	&__card-title {
+		overflow-wrap: anywhere;
 	}
 	
 	&__short-long {

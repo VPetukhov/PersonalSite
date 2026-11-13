@@ -2,7 +2,7 @@
 	<div class="relevant-projects__layout">
 		<div class="relevant-projects__stain relevant-projects__stain--top"></div>
 		<div class="relevant-projects__header section__header">
-			<div class="relevant-projects__title section__title">My relevant projects</div>
+			<h2 class="relevant-projects__title section__title">Projects for collaboration</h2>
 		</div>
 		<div class="relevant-projects__body">
 			<ul class="relevant-projects__list">
@@ -25,6 +25,10 @@
 							{% if project.long %}
 							<div class="relevant-project__show-more js-relevant-show-more">Show more ↓</div>
 							<div class="relevant-project__card-text relevant-project__short-long">{{ project.long }}</div>
+							{% endif %}
+
+							{% if project.link %}
+							<div class="relevant-project__card-text"><a href="{{ project.link }}">{{ project.linkTitle }}</a></div>
 							{% endif %}
 						</div>
 					</li>

@@ -1,14 +1,14 @@
-<div class="projects">
+<div class="projects" id="projects">
 	<div class="projects__layout">
 		<div class="projects__stain projects__stain--top"></div>
 		<div class="projects__header section__header">
-			<div class="projects__title section__title">Check out completed projects to see how I can be useful to your business</div>
-			<div class="projects__desc section__desc">It is important to keep in mind that most of my work is under NDA</div>
+			<h2 class="projects__title section__title">Selected projects</h2>
+			<div class="projects__desc section__desc">Production AI, independent products and scientific software. Client work under NDA is described without naming the client.</div>
 		</div>
 		<div class="projects__body">
 			<div class="projects__list">
 				{%- for project in projects -%}
-					<div class="projects__item project">
+					<div class="projects__item project" id="{{ project.id }}">
 						<a class="project__card" href="{{ project.link }}">
 							<div class="project__card-title">
 								{{ project.title }}

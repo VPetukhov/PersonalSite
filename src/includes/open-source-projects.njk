@@ -1,4 +1,4 @@
-<a class="js-scroll-open-source"></a>
+<a id="open-source" class="js-scroll-open-source"></a>
 <div class="os-projects">
 	<div class="os-projects__layout">
 		<div class="os-projects__stain os-projects__stain--top"></div>
@@ -39,7 +39,7 @@
 						{% endif %}
 
 						<div class="os-projects__item-href">
-							<a class="os-projects__item-href-link" href="{{ project.link }}" target="_blank"></a>
+							<a class="os-projects__item-href-link" href="{{ project.link }}" target="_blank" rel="noopener noreferrer" aria-label="{{ project.title }} on GitHub"></a>
 						</div>
 					</div>
 					{%- endfor -%}

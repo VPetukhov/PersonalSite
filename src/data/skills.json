@@ -1,42 +1,43 @@
 [
 	{
-		"title": "Machine learning",
+		"title": "AI systems & products",
 		"skills": [
 			{
-				"title": "Direct work on your project",
-				"desc": "Analysing your data or developing novel machine learning methods for your problem"
+				"title": "Production LLM systems",
+				"desc": "Build document intelligence, RAG, hybrid search and agent workflows with source verification and model evaluation. Experience with Pydantic AI, LiteLLM, PostgreSQL / pgvector and EU-hosted deployments."
 			},
 			{
-				"title": "R&D",
-				"desc": "Gathering data and building an MVP for testing new ideas"
+				"title": "Full-stack products & prototypes",
+				"desc": "Turn a problem into a working product: data collection, AI pipelines, APIs, search and user interfaces. Python, FastAPI, TypeScript, React / Next.js, Docker and GCP."
 			},
 			{
-				"title": "Adding AI to your organization",
-				"desc": "Evaluating your ideas, building a prototype and getting funding.If you don’t have an AI department yet, but you think you need one, I can help that. From evaluating your ideas and prototyping the service to helping with funding applications and finding people for the department"
+				"title": "Document & workflow automation",
+				"desc": "Process scans and office documents with OCR and LLMs, and connect workflows to Microsoft 365, Teams, SharePoint and ERP systems."
 			},
 			{
-				"title": "Make your organization data driven",
-				"desc": "Having right data can drastically improve strategic decision making, as well as company operations. I can help you to set up data pipelines, which would guide your decisions by providing insights from both data within your company and external sources, relevant to your problem."
+				"title": "Technical strategy & leadership",
+				"desc": "Assess feasibility, scope an MVP, define architecture and hire an engineering team. Experience as a start-up CTO, founder and independent consultant, including technical due diligence for biotech investment."
 			}
 		]
 	},
 	{
-		"title": "Computational biology",
+		"title": "Computational biology & modelling",
 		"skills": [
 			{
-				"title": "experiment design"
+				"title": "Single-cell & spatial transcriptomics",
+				"desc": "Analyse scRNA-seq and spatial data, develop quality-control metrics, and interpret cell composition and gene-expression changes. Experience with 10x Xenium, MERFISH, Scanpy and Seurat."
 			},
 			{
-				"title": "analysis and interpretation of data"
+				"title": "Multi-omics pipelines",
+				"desc": "Build automated analysis workflows for scRNA-seq, CITE-seq, TCR/BCR-seq and ATAC-seq, including work supporting CAR-T cell-therapy development."
 			},
 			{
-				"title": "developing methods and models for biological data"
+				"title": "Statistical methods & research software",
+				"desc": "Develop Bayesian models, graph methods and scientific tools in R, Julia, C++ and Python. Lead-author software includes Baysor, dropEst and cacoa; co-first-author work includes conos."
 			},
 			{
-				"title": "independent evaluation of your results"
-			},
-			{
-				"title": "for transcriptomics, picking a right experimental method for your problem"
+				"title": "Benchmarking & independent evaluation",
+				"desc": "Evaluate algorithms and biological results, quantify the effects of processing errors, and build reproducible benchmarks for scientific and AI systems."
 			}
 		]
 	}
