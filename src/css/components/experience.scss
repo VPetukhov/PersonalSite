@@ -1,165 +1,153 @@
 .experience {
 	z-index: 10;
-	padding: 0 0 40px 0;
+	padding: 0 0 40px;
+
 	@include media('lg') {
-		padding: 0 0 200px 0;
+		padding-bottom: 200px;
 	}
+
 	&__layout {
 		@include layout();
 	}
 
 	&__section {
 		margin-top: 40px;
+		scroll-margin-top: 40px;
+
 		@include media('lg') {
 			margin-top: 100px;
 		}
 	}
 
-	&__section--work &__item-position-title {
-		color: $blue;
-		padding-bottom: 10px;
-	}
-
-	&__section--education &__item-position-title {
-		color: $white;
-	}
-
 	&__section-title {
 		display: inline-flex;
+		max-width: 100%;
+		margin: 0 0 24px;
+		padding: 10px 24px;
 		color: $white;
+		background-color: $blue;
 		@include font('w');
 		font-size: $text-size-small;
-		background-color: $blue;
-		padding: 10px 30px;
 		@include rounded(100em);
+
 		@include media('lg') {
-			font-size: 1.6em;
+			margin-bottom: 40px;
 			padding: 10px 30px;
+			font-size: 1.6em;
 		}
 	}
 
 	&__head {
 		display: none;
-		margin: 60px 0 30px 0;
-		padding: 0 60px;
-		color: fade-out($white, .7);
+
 		@include media('lg') {
-			display: flex;
+			display: grid;
+			grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+			gap: 48px;
+			margin-bottom: 16px;
+			padding: 0 32px;
+			color: fade-out($white, .45);
+			font-size: $text-size-small;
 		}
 	}
 
-	&__head-position {
-		width: 25%;
-	}
-
-	&__head-date {
-		width: 25%;
-	}
-
-	&__head-place {
-		width: 25%;
-	}
-
-	&__head-projects {
-		width: 25%;
-	}
-
 	&__body {
+		display: grid;
+		gap: 16px;
 	}
 
 	&__item {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 20px;
-		@include ease(.1s);
+		display: grid;
+		gap: 24px;
+		min-width: 0;
+		padding: 24px 20px;
+		border: 1px solid fade-out($white, .88);
+		background-color: fade-out($white, .98);
+		scroll-margin-top: 40px;
 		@include rounded(20px);
+		@include ease(.1s);
+
 		@include media('lg') {
-			padding: 60px;
-			flex-wrap: nowrap;
+			grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+			align-items: start;
+			gap: 48px;
+			padding: 32px;
 		}
 	}
 
 	&__item:hover {
-		background-color: fade-out(#fff, .95);
+		background-color: fade-out($white, .95);
+	}
+
+	&__item-meta {
+		display: grid;
+		align-content: start;
+		gap: 16px;
+		min-width: 0;
+	}
+
+	&__item--brief &__item-meta {
+		grid-column: 1 / -1;
 	}
 
 	&__item-position {
-		width: 100%;
-		@include font('w');
-		margin-bottom: 20px;
-		@include media('lg') {
-			width: 25%;
-			margin-bottom: 0;
-		}
-	}
-
-	&__item-date {
-		width: 100%;
-		color: $white;
-		margin-bottom: 20px;
-		@include media('lg') {
-			width: 25%;
-			margin-bottom: 0;
-		}
-	}
-
-	&__item-place {
-		width: 100%;
-		color: $white;
-		margin-bottom: 20px;
-		@include media('lg') {
-			width: 25%;
-			margin-bottom: 0;
-		}
-	}
-
-	&__item-place-name {
-		padding-right: 40px;
-		font-size: $text-size-small;
-		@include media('lg') {
-			font-size: $text-size-normal;
-		}
-	}
-
-	&__item-projects {
-		width: 100%;
-		color: $white;
-		font-size: $text-size-small;
-		@include media('lg') {
-			width: 25%;
-			font-size: $text-size-normal;
-		}
-		p {
-			margin: 0 0 10px 0;
-			@include media('lg') {
-				margin: 0 0 20px 0;
-			}
-		}
+		padding-left: 16px;
+		border-left: 2px solid $blue;
 	}
 
 	&__item-position-title {
-		padding: 0 40px 0 20px;
-		border-left: 2px #fff solid;
+		margin: 0;
+		color: $white;
+		@include font('w');
+		font-size: $text-size-normal;
+		font-weight: normal;
+		line-height: 1.35;
+		overflow-wrap: anywhere;
 	}
 
 	&__item-position-desc {
-		padding: 0 40px 0 20px;
-		border-left: 2px #fff solid;
+		margin: 8px 0 0;
+		color: fade-out($white, .3);
 		font-size: $text-size-small;
-		color: $white;
+		line-height: 1.5;
 	}
 
 	&__item-date-period {
-		padding: 8px 20px;
-		display: inline-flex;
+		display: inline-block;
+		max-width: 100%;
+		padding: 6px 12px;
+		border: 1px solid fade-out($white, .7);
+		color: $white;
 		font-size: $text-size-small;
-		border: 1px fade-out(#fff, .6) solid;
+		line-height: 1.5;
 		@include rounded(100em);
-		@include media('lg') {
-			font-size: $text-size-normal;
-			margin-top: -20px;
-			padding: 8px 20px;
-		}
 	}
 
+	&__item-place-name {
+		margin: 0;
+		color: fade-out($white, .25);
+		font-size: $text-size-small;
+		line-height: 1.5;
+	}
+
+	&__item-projects {
+		min-width: 0;
+		color: $white;
+		font-size: $text-size-small;
+		line-height: 1.65;
+		overflow-wrap: anywhere;
+
+		@include media('lg') {
+			font-size: $text-size-normal;
+		}
+
+		p {
+			max-width: 75ch;
+			margin: 0 0 16px;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
 }

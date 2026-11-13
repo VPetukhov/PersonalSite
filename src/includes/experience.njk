@@ -5,23 +5,25 @@
 			<h2 class="experience__section-title">{{ section.title }}</h2>
 			<div class="experience__head" aria-hidden="true">
 				<div class="experience__head-position">{{ section.positionLabel }}</div>
-				<div class="experience__head-date">Date</div>
-				<div class="experience__head-place">{{ section.placeLabel }}</div>
-				<div class="experience__head-projects">Work / details</div>
+				<div class="experience__head-projects">Details</div>
 			</div>
 			<div class="experience__body">
 				{% for item in section.items %}
-				<div class="experience__item"{% if item.id %} id="{{ item.id }}"{% endif %}>
-					<div class="experience__item-position">
-						<div class="experience__item-position-title">{{ item.title }}</div>
-						{% if item.subtitle %}<div class="experience__item-position-desc">{{ item.subtitle }}</div>{% endif %}
+				<article class="experience__item{% if not item.details.length %} experience__item--brief{% endif %}"{% if item.id %} id="{{ item.id }}"{% endif %}>
+					<div class="experience__item-meta">
+						<div class="experience__item-position">
+							<h3 class="experience__item-position-title">{{ item.title }}</h3>
+							{% if item.subtitle %}<p class="experience__item-position-desc">{{ item.subtitle }}</p>{% endif %}
+						</div>
+						<div class="experience__item-date"><span class="experience__item-date-period">{{ item.dates }}</span></div>
+						<p class="experience__item-place-name">{{ item.place }}</p>
 					</div>
-					<div class="experience__item-date"><div class="experience__item-date-period">{{ item.dates }}</div></div>
-					<div class="experience__item-place"><div class="experience__item-place-name">{{ item.place }}</div></div>
+					{% if item.details.length %}
 					<div class="experience__item-projects">
 						{% for detail in item.details %}<p>{{ detail }}</p>{% endfor %}
 					</div>
-				</div>
+					{% endif %}
+				</article>
 				{% endfor %}
 			</div>
 		</section>
